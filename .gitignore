@@ -1,0 +1,18 @@
+# Ignore the following files (do not commit working files to repository)
+# - see other .gitignore in mkdocs-project folder, to exclude auto-generated site
+
+# Ignore temporary files from editors
+
+.swp
+
+# Office temporary files
+
+*.tmp
+
+# Word
+#~$*.doc*
+# Excel
+#~$*.xls*
+# PowerPoint
+#~$*.ppt*
+~$*

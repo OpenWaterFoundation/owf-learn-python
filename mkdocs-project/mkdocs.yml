@@ -1,0 +1,29 @@
+# This is the main configuration file for the MkDocs website.
+# Use hash-comments to comment out pages have not been written
+# Reference: http://www.mkdocs.org/user-guide/configuration/
+#
+site_name: OWF Learn Python
+pages:
+- Home: index.md
+- About:  about.md 
+- Install and Configure Python:  install-python.md
+- Running the Python Program:  run-python-program.md
+- Python Programming Basics:  programming-basics.md
+- Python Best Practices: best-practices.md
+- Command Line Parameters:  command-line-parameters.md
+- Global vs. Local Variables:  global-local-variables.md
+- Logging:  logging.md
+- Functions:  functions.md
+- Error Handling:  error-handling.md
+- Documenting Python Code:  documentation.md
+- Python Tools for Water Resources:  water-resources.md
+theme: readthedocs
+repo_url:  https://github.com/OpenWaterFoundation/owf-learn-python
+site_description:  Open Water Foundation Learn Python training documentation
+site_author:  Open Water Foundation
+site_favicon:  OWF-Logo-Favicon-32x32.png
+copyright:  Copyright Open Water Foundation
+#extra_css:
+#- css/extra.css
+# Defaults to all JavaScript in the docs folder
+# extra_javascript:
