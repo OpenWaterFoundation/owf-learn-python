@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Open Water Foundation">
+  
+  <title>Install and Configure Python - OWF Learn Python</title>
+  
+
+  <link rel="shortcut icon" href="../OWF-Logo-Favicon-32x32.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Install and Configure Python";
+    var mkdocs_page_input_path = "install-python.md";
+    var mkdocs_page_url = "/install-python/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../extra_javascript.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> OWF Learn Python</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Install and Configure Python</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#install-python">Install Python</a></li>
+                
+                    <li><a class="toctree-l4" href="#bundled-installations">Bundled Installations</a></li>
+                
+                    <li><a class="toctree-l4" href="#cygwin-installation">Cygwin Installation</a></li>
+                
+                    <li><a class="toctree-l4" href="#linux-installation">Linux Installation</a></li>
+                
+                    <li><a class="toctree-l4" href="#windows-installation">Windows Installation</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-pip-or-other-package-installer">Install pip (or Other Package Installer)</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-third-party-packages">Install Third-party Packages</a></li>
+                
+                    <li><a class="toctree-l4" href="#create-a-script-to-configure-the-python-environment">Create a Script to Configure the Python Environment</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-interactive-development-environment">Install Interactive Development Environment</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../run-python-program/">Running the Python Program</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../programming-basics/">Python Programming Basics</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../best-practices/">Python Best Practices</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../command-line-parameters/">Command Line Parameters</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../global-local-variables/">Global vs. Local Variables</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../logging/">Logging</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../functions/">Functions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../error-handling/">Error Handling</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../documentation/">Documenting Python Code</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../water-resources/">Python Tools for Water Resources</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">OWF Learn Python</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Install and Configure Python</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="install-python">Install Python</h1>
+<p>Python can be downloaded and installed from the Python website (<a href="https://www.python.org/downloads/">python.org/downloads</a>).
+In general, you should choose the latest 2.x or 3.x version, and the choice may depend on integration with an existing environment.
+For example, an important application may have been developed in one version or the other.
+To determine what version of Python is already installed, open a command shell in the preferred computer operating system
+(Cygwin, Linux, or Windows), and check for an installed and default version:</p>
+<pre><code class="bash">$ python --version
+Python 2.7.2
+</code></pre>
+
+<p>Even if nothing is listed, Python may still be installed on the system, but most likely not, because generally at least one installed
+version will be the default and will be included in the <code>PATH</code> environment variable.  Refer to the following sections for
+differences between operating systems.</p>
+<p>Any changes to the Python installation environment, such as installing third-party packages, will install into the Python software file
+location based on the version of Python that was configured and run in the first place.  Be careful when working on a system that includes
+multiple Python versions because care needs to be taken to install components for the correct version.</p>
+<h2 id="bundled-installations">Bundled Installations</h2>
+<p>Python may be distributed with software frameworks that depend on Python and need to control its installation so as to
+not break the framework.
+Bundled versions of Python are generally not configured as the default installation on a system and often require that a startup script
+is run to configure the Python environment.  Examples of bundled Python distributions include:</p>
+<ul>
+<li>Esri ArcGIS Geographic Information System ().  On Windows and ArcGIS 10.4, Python is installed in the C:\Python27 folder and includes C:\Python27\ArcGIS10.4.
+The ArcGIS software provides configuration tools to select the Python that is used.</li>
+<li>QGIS (<a href="https://www.qgis.org/en/site/forusers/download.html">https://www.qgis.org/en/site/forusers/download.html</a>) - open source Geographic Information System
+(for example Python may be installed in the C:\OSGeo4W64\apps\Python27 folder and the Python environment is initialized by running C:\OSGeo4W64\bin\python.exe)</li>
+</ul>
+<h2 id="cygwin-installation">Cygwin Installation</h2>
+<p>Python for Cygwin (<a href="https://cygwin.com/install.html">https://cygwin.com/install.html</a>) is installed by selecting the Python interpreter in the install package listing.
+The Python program is installed as /usr/bin/python or /usr/bin/python3 and supporting files are installed in /usr/lib/Python2.7/ and /usr/lib/Python3.4/.
+The latest supported Python for each major version is installed when the Cygwin installer is run.</p>
+<h2 id="linux-installation">Linux Installation</h2>
+<p>Python for Linux is installed by following the instructions on the Python download page.
+The Python program is installed as /usr/bin/python or /usr/bin/python3 and supporting files are installed in /usr/lib/Python2.7/ and /usr/lib/Python3.4/.</p>
+<h2 id="windows-installation">Windows Installation</h2>
+<p>Python for Linux is installed by following the instructions on the Python download page.
+Python will install in the top-level folder C:\Python27 or C:\Python34, for example.
+This allows the desired version of Python to be used based on component dependencies.
+In general you will want to install a recent version (in the 2 or 3 major version) and stick with that until there is a reason to change,
+or you have time to upgrade and ensure that third-part components are also updated.</p>
+<h2 id="install-pip-or-other-package-installer">Install pip (or Other Package Installer)</h2>
+<p>The pip software is used to install Python packages and is the preferred installation tool since older tools such as easy_install
+do not support current conventions.  Therefore, in order to install third-party packages, install pip first.  To check for whether pip is already installed:</p>
+<pre><code class="bash">$ pip --version
+</code></pre>
+
+<p>If not installed, install with:</p>
+<pre><code class="bash">$ python -m ensurepip
+</code></pre>
+
+<h2 id="install-third-party-packages">Install Third-party Packages</h2>
+<p>Third party packages typically have their own websites with installation instructions.  Follow those instructions within the cofigured
+Python environment that is to receive the installation.  If necessary, check the Python version first to ensure compatibility with the
+module.</p>
+<h2 id="create-a-script-to-configure-the-python-environment">Create a Script to Configure the Python Environment</h2>
+<p>In many cases, Python scripts can be run using the default Python that is recognized for an operating system (often the last one that was installed
+because the installation procedure will update the <code>PATH</code> environment variable).  However, it may be
+appropriate to specify a different version for a task.  In any case, it may make sense to create a script to run the Python program so that the user does not
+need to remember command-line syntax.  The example below runs a Python program on Cygwin/Linux.
+A similar .bat file could be created for Windows, in which case the <code>PATH</code> could be changed to specify the preferred Python at the start of the <code>PATH</code>.
+The following environment variables control the Python execution environment:</p>
+<ul>
+<li>
+<p><code>PYTHONPATH</code> - tells the Python interpreter where to locate the module files imported into a Python program.
+It should include the Python source library folder and the folders containing Python source code.  This variable may be set by the installer.</p>
+</li>
+<li>
+<p><code>PYTHONSTARTUP</code> - specifies the path to an initialization file containing Python code that is executed every time the interpreter starts up.</p>
+</li>
+</ul>
+<p>It may be helpful to understand the startup environment.  Run the following Python program to print environment information.</p>
+<pre><code class="python"># Print PYTHONPATH folders
+import sys
+print sys.path
+</code></pre>
+
+<p>Example output from running <code>python</code> on Cygwin and executing the above is:</p>
+<pre><code>$ python
+Python 2.7.10 (default, Jun  1 2015, 18:05:38)
+[GCC 4.9.2] on cygwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import sys
+&gt;&gt;&gt; print sys.path
+['', '/usr/lib/python2.7/site-packages/logilab_common-0.62.0-py2.7.egg', '/usr/lib/python27.zip', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-cygwin', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/usr/lib/python2.7/site-packages']
+&gt;&gt;&gt; quit()
+
+</code></pre>
+
+<p>From the above it can be seen that the supporting library files are installed in /usr/lib/python2.7.</p>
+<p>A simple configuration/run script may be similar to the following.</p>
+<pre><code class="bash">#!/bin/bash
+#
+# Specify the Python interpreter to run
+set PYTHON=/usr/sbin/python3
+# Set the PYTHONPATH so that third party libraries can be found in the installation folder for the specific Python version:
+set PYTHONPATH=/some/new/path:$PYTHONPATH
+# Now run the python script and pass command line parameters
+# - need to make sure file is found, perhaps by using absolute path or path from $HOME
+%PYTHON% hello-world.py $*
+
+</code></pre>
+
+<p>where the hello-world.py file contains:</p>
+<pre><code class="python">print(&quot;Hello world&quot;)
+</code></pre>
+
+<p>or, to use built-in system functionality to run the python3 interpreter automatically, which may be appropriate for simple scripts:</p>
+<pre><code class="bash">#!/usre/bin/python3
+
+print(&quot;Hello world&quot;)
+</code></pre>
+
+<h2 id="install-interactive-development-environment">Install Interactive Development Environment</h2>
+<p>An Interactive Development Environment (IDE) is helpful for development because it provides an integrated edit/run/test/build/deploy environment.
+There are many Python developer environments.  The following are several that may be appropriate.  It is important to recognize the impacts that an IDE
+will have on file structure, project files committed to repository, etc.  Other developers may use a different tool that will introduce other artifacts
+into the development environment.</p>
+<ul>
+<li>
+<p>Simple text editor and command line.  This is the default case and may be appropriate especially when troubleshooting a program on a remote environment
+where full developer environment cannot be installed.</p>
+</li>
+<li>
+<p>IDLE - distributed with Python.  Start by running <code>idle</code> on the command line.</p>
+</li>
+<li>
+<p><a href="https://www.jetbrains.com/pycharm/download">PyCharm</a> - Integrated Python development environment with commerical and community editions.</p>
+</li>
+<li>
+<p><a href="https://wingware.com/">WingIDE</a> - commercial product.</p>
+</li>
+<li>
+<p><a href="https://www.sublimetext.com/">Sublime</a> - text editor with features to supporty Python projects.</p>
+</li>
+<li>
+<p><a href="http://www.pydev.org/">Eclipse PyDev</a> - Python plugin for Eclipse.</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../run-python-program/" class="btn btn-neutral float-right" title="Running the Python Program">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../about/" class="btn btn-neutral" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright Open Water Foundation</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../about/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../run-python-program/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

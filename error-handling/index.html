@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Open Water Foundation">
+  
+  <title>Error Handling - OWF Learn Python</title>
+  
+
+  <link rel="shortcut icon" href="../OWF-Logo-Favicon-32x32.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Error Handling";
+    var mkdocs_page_input_path = "error-handling.md";
+    var mkdocs_page_url = "/error-handling/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../extra_javascript.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> OWF Learn Python</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../install-python/">Install and Configure Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../run-python-program/">Running the Python Program</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../programming-basics/">Python Programming Basics</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../best-practices/">Python Best Practices</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../command-line-parameters/">Command Line Parameters</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../global-local-variables/">Global vs. Local Variables</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../logging/">Logging</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../functions/">Functions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Error Handling</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#error-handling">Error Handling</a></li>
+                
+                    <li><a class="toctree-l4" href="#function-return-status">Function Return Status</a></li>
+                
+                    <li><a class="toctree-l4" href="#exceptions">Exceptions</a></li>
+                
+                    <li><a class="toctree-l4" href="#logging-exceptions">Logging Exceptions</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../documentation/">Documenting Python Code</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../water-resources/">Python Tools for Water Resources</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">OWF Learn Python</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Error Handling</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="error-handling">Error Handling</h1>
+<p>Error handling is one of the most important concepts in software development.
+Errors that are not handled will result in ungraceful software exits.
+Errors that are gracefully handled also need to be logged or otherwise made known to the user so that corrective action can occur.
+Corrections may include fixing bad program input or fixing a software bug.</p>
+<p>Error handling can be implemented in various ways, with a few options described below.
+The basic approach is to detect a problem, handle the problem, and return logic flow gracefully to calling code.
+In some cases an error is fatal and the program should stop.
+In other cases, the progam can continue, perhaps with notification to the user.
+The degree of notification depends on whether the error is expected as normal behavior or is out of the range of normal conditions.
+For example, it should be expected that code that processes files may encounter cases where files are missing.</p>
+<p>Good code recognizes the potential for errors and handles gracefully.
+This may mean that a significant amount of code is devoted to checking input and implementing error handling.
+However, the alternative is unfriendly, unusable software.
+For example, a function that processes a file should check for file existence and handle missing or mal-formatted files.
+A function that performs math operations should detect and handle division by zero.
+Leap years should be handled gracefully without generating errors in the first place, rather than having incomplete code that generates exceptions.
+The programmer is not off the hook if they implement exception handling as described below - the error handling should provide useful feedback.</p>
+<h2 id="function-return-status">Function Return Status</h2>
+<p>Basic error handling for functions includes using a return status to let calling code know whether the function was succesful.
+This may be appropriate for basic functionality but is limited. Using exceptions as in the next section is generally more useful.</p>
+<p>For example, a function might return an integer to indicate its status, with 0 meaning success and other values corresponding to error states.
+A function to remove a file might return 0 if the remove is successful, 1 if file did not exist, 2 if permissions did not allow removing, etc.
+This form of error handling can become complex because errors have to be coded and decoded, with corresponding messages.
+Of course, a general message could be printed if the status is non-zero, but that may not be helpful.</p>
+<p>This approach for error handling is often too limiting in many cases.  See the discussion of Exceptions for an alternative.
+However, many programming languages do utilize an exit status from the main program because inter-language error handling must rely on simple concepts
+like a numerical exit status or a printed status string.</p>
+<h2 id="exceptions">Exceptions</h2>
+<p>Exceptions are unexpected conditions that occur in the logic of a program.
+Exception objects are "thrown" by the Python interpreter when an issue is detected, and have a specific type.
+For example, trying to use a number variable type when a string is expected may generate a TypeError.
+The Exception occurs at a point in the software and "travels up" to the main program.  This is the "Exception stack" or call sequence
+that is printed when Python detects that it cannot continue.
+Exceptions are "caught" by type, at which time an appropriate action can be taken.
+If an Exception type is not caught in one level of code, it will continue to travel up the stack until it is caught or the Python interpreter catches at the main level.
+Exceptions objects have the same parent object <code>Exception</code>, which allows a cascading sequence of catches culminating with catching the most generic type.
+The following illustrates a simple case where an exception is generated (thrown) and caught using the default exception handler (no specific exception type is caught).</p>
+<pre><code>try:
+  x = 1/0
+except:
+  print(&quot;Division by zero:)
+
+</code></pre>
+
+<p>The <code>try</code> block code can be nested (exception handling inside of exception handling), used in loops, etc.
+The exception can be handled by continuing a loop, returning from a function, throwing another exception, etc.,
+as appropriate for the code logic.  See the logging section below for guidance on error handling and logging approach.</p>
+<p>For more information for Python 2, see:</p>
+<ul>
+<li><a href="https://docs.python.org/2/tutorial/errors.html">Errors and Exception</a>.</li>
+<li><a href="https://docs.python.org/2/library/exceptions.html">Built-in exceptions</a>.</li>
+</ul>
+<p>For Python 3, see:</p>
+<ul>
+<li><a href="https://docs.python.org/3/tutorial/errors.html">Errors and Exceptions</a></li>
+<li><a href="https://docs.python.org/3/library/exceptions.html">Built-in Exceptions</a></li>
+</ul>
+<h2 id="logging-exceptions">Logging Exceptions</h2>
+<p>If logging is implemented for the program, then exceptions should be loggged as warning or error messages.
+This is particularly useful to allow the log file to be provided software developers so they can debug an issue.
+See the following for information about logging exceptions:  <a href="https://www.loggly.com/blog/exceptional-logging-of-exceptions-in-python/">https://www.loggly.com/blog/exceptional-logging-of-exceptions-in-python/</a></p>
+<p>It is useful to print the exception stack trace.  See the following for information:</p>
+<ul>
+<li>
+<p>Python 2 - <a href="https://docs.python.org/2/library/traceback.html">https://docs.python.org/2/library/traceback.html</a></p>
+</li>
+<li>
+<p>Python 3 - <a href="https://docs.python.org/3/library/traceback.html">https://docs.python.org/3/library/traceback.html</a></p>
+</li>
+</ul>
+<p>An example for how to print the exception stack trace is as follows
+(see <a href="http://stackoverflow.com/questions/5191830/best-way-to-log-a-python-exception">http://stackoverflow.com/questions/5191830/best-way-to-log-a-python-exception</a>):</p>
+<pre><code class="python">import logging
+try:
+    1/0
+except Exception as e:
+    logging.exception(&quot;Division by zero&quot;)
+</code></pre>
+
+<p>The above <code>logging.exception</code> call will print the stack trace whereas <code>logging.warning</code> and <code>logging.error</code> will print a simple message.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../documentation/" class="btn btn-neutral float-right" title="Documenting Python Code">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../functions/" class="btn btn-neutral" title="Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright Open Water Foundation</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../functions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

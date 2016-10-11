@@ -1,0 +1,5 @@
+# Extra CSS to be used by the MkDocs theme
+
+h1 {
+	color: red;
+}

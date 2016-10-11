@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Open Water Foundation">
+  
+  <title>Functions - OWF Learn Python</title>
+  
+
+  <link rel="shortcut icon" href="../OWF-Logo-Favicon-32x32.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Functions";
+    var mkdocs_page_input_path = "functions.md";
+    var mkdocs_page_url = "/functions/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../extra_javascript.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> OWF Learn Python</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../install-python/">Install and Configure Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../run-python-program/">Running the Python Program</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../programming-basics/">Python Programming Basics</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../best-practices/">Python Best Practices</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../command-line-parameters/">Command Line Parameters</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../global-local-variables/">Global vs. Local Variables</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../logging/">Logging</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Functions</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#functions">Functions</a></li>
+                
+                    <li><a class="toctree-l4" href="#function-names">Function Names</a></li>
+                
+                    <li><a class="toctree-l4" href="#function-documentation">Function Documentation</a></li>
+                
+                    <li><a class="toctree-l4" href="#order-of-functions">Order of Functions</a></li>
+                
+                    <li><a class="toctree-l4" href="#returning-values-from-functions">Returning Values From Functions</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../error-handling/">Error Handling</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../documentation/">Documenting Python Code</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../water-resources/">Python Tools for Water Resources</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">OWF Learn Python</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Functions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="functions">Functions</h1>
+<p>It is good practice to break code into functions that perform specific tasks.
+This ensures that code logic is easier to understand and maintain.</p>
+<h2 id="function-names">Function Names</h2>
+<p>Coding conventions vary between languages, programmers, and projects.
+The Style Guide for Python Code provides guidance for function names:  <a href="https://www.python.org/dev/peps/pep-0008/#function-names">https://www.python.org/dev/peps/pep-0008/#function-names</a>.</p>
+<p>In summary, use lowecase names with words separated by underscores.  Or, use "camelCase" but only if already in use.
+For a new project, pick a style that is appropriate given other conventions and remain consistent.</p>
+<h2 id="function-documentation">Function Documentation</h2>
+<p>Refer to the <a href="" title="documentation">Documentation</a> section.</p>
+<h2 id="order-of-functions">Order of Functions</h2>
+<p>To facilitate code review, functions should generally be alphabetized unless there is a reason to group/order differently.:w</p>
+<h2 id="returning-values-from-functions">Returning Values From Functions</h2>
+<p>Python, like other languages, has conventions for how variables are passed to functions, and whether those variables can be changed.
+Articles on the topic can be confusing, especially to beginning programmers,
+for example:  <a href="http://www.python-course.eu/passing_arguments.php">http://www.python-course.eu/passing_arguments.php</a>.
+To simplify, keep the following in mind:</p>
+<ul>
+<li>
+<p>Mutable objects are those that can be modified.  For example, a list that is passed to the function can have items added in the function.</p>
+</li>
+<li>
+<p>Immutable objects (primitives like strings, numbers) cannot be modified and new copies are made inside the function.
+Therefore, a function that needs to return such objects will need to enclose the object in a mutable object like a list in the function parameters, or
+return the new immutable object(s) as the return value, a new list, tuple, etc.</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../error-handling/" class="btn btn-neutral float-right" title="Error Handling">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../logging/" class="btn btn-neutral" title="Logging"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright Open Water Foundation</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../logging/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../error-handling/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

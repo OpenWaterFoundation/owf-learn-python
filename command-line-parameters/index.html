@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Open Water Foundation">
+  
+  <title>Command Line Parameters - OWF Learn Python</title>
+  
+
+  <link rel="shortcut icon" href="../OWF-Logo-Favicon-32x32.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Command Line Parameters";
+    var mkdocs_page_input_path = "command-line-parameters.md";
+    var mkdocs_page_url = "/command-line-parameters/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../extra_javascript.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> OWF Learn Python</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../install-python/">Install and Configure Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../run-python-program/">Running the Python Program</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../programming-basics/">Python Programming Basics</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../best-practices/">Python Best Practices</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Command Line Parameters</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#command-line-parameters">Command Line Parameters</a></li>
+                
+                    <li><a class="toctree-l4" href="#operating-system-shell">Operating System Shell</a></li>
+                
+                    <li><a class="toctree-l4" href="#command-line-parameter-standards">Command Line Parameter Standards</a></li>
+                
+                    <li><a class="toctree-l4" href="#getting-the-value-of-command-line-parameters-basic">Getting the Value of Command Line Parameters (Basic)</a></li>
+                
+                    <li><a class="toctree-l4" href="#getting-the-value-of-command-line-parameters-advanced">Getting the Value of Command Line Parameters (Advanced)</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../global-local-variables/">Global vs. Local Variables</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../logging/">Logging</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../functions/">Functions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../error-handling/">Error Handling</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../documentation/">Documenting Python Code</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../water-resources/">Python Tools for Water Resources</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">OWF Learn Python</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Command Line Parameters</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="command-line-parameters">Command Line Parameters</h1>
+<p>The Python interpreter can be run by specifying command line parameters (also called arguments).
+In basic use, the first parameter is the name of the Python program file to run and subsequent parameters are data to pass to the program.
+Parameters may also be specified prior to the program file name to control Python.  To see a full list of Python interpreter command paramameters,
+run <code>python -h</code> or <code>python --help</code>.  For example <code>python -v</code> will run in verbose mode and <code>python --version</code> will print the version.
+Running <code>python -v helloworld.py</code> will run the specified program in versbose mode.</p>
+<p>It is customary to write programs to accept command line parameters to allow flexibility in running the program so that input is not
+hard-coded.  This takes more time but allows the program to be reused and combined with other programs to provide greater functionality.</p>
+<h2 id="operating-system-shell">Operating System Shell</h2>
+<p>Every operating system offers a command line shell (or "console" or "terminal").  The operating system kernal runs continuously and manages processes,
+some of which are transitory and some of which are "services" that start when the computer starts and run continuously.
+The kernal starts a command shell program when requested.</p>
+<p>On Windows, typical command shells are cmd.exe (shown in Start menu as "Command Prompt") and Windows PowerShell.  For this documentation, it is assumed
+that cmd.exe is most often used and that batch files with *.bat filename extension are used to run Python programs.
+After starting, the Windows command shell will display a prompt such as the folder name (e.g., <code>C:\Users\John</code>).
+The prompt can be modified by setting the <code>PROMPT</code> environment variable.
+For example, see:  <a href="http://www.hanselman.com/blog/ABetterPROMPTForCMDEXEOrCoolPromptEnvironmentVariablesAndANiceTransparentMultiprompt.aspx">http://www.hanselman.com/blog/ABetterPROMPTForCMDEXEOrCoolPromptEnvironmentVariablesAndANiceTransparentMultiprompt.aspx</a>.</p>
+<p>On Cygwin and Linux, the "bash" command shell is often used, although other shells are available.
+After starting, the bash window will display the prompt (e.g., <code>$</code>, folder name, or other string), depending on the value of <code>PS1</code>, <code>PS2</code>, and <code>PS3</code>
+environment variables.  These environment variables can be set to create a customized shell, for example for a bundled software framework.
+See the following for more information:  <a href="https://wiki.archlinux.org/index.php/Bash/Prompt_customization">https://wiki.archlinux.org/index.php/Bash/Prompt_customization</a>.</p>
+<p>On Windows, the Windows Task Manager can be used to list running applications and will show <code>Command Prompt</code>.
+On Cygwin/Linux, the <code>ps</code> command will list processes and the <code>bash</code> shell will be listed as <code>/usr/bin/bash</code>.</p>
+<p>The command shell displays a prompt and then waits for user input, which is entered using the <code>Enter</code> key on the keyboard.
+Typically running the <code>exit</code> command causes the shell to exit (window will go away).
+The text that is typed before <code>Enter</code> is parsed by the command shell, using spaces and tabs as whitespace between tokens.
+If the first token is recognized as an internal command of the shell, it is executed without trying to run any other program.
+In this case additional tokens may also be used to modify the behavior of the internal commmand.</p>
+<p>If the first token is not recognized as an internal command of the shell, then the folders in the <code>PATH</code> environment variable are searched to find the program to run.
+On Cygwin/Linux use <code>which programName</code> to determine whether a program is in the <code>PATH</code>.  On Windows, use <code>where programName</code>.
+You need to know the name of the program that will be run.
+The remaining tokens on the command line are passed to the called program, using whitespace characters to split the tokens.
+For example, if the program specified after the command prompt is <code>python --version</code>, then the <code>python</code> program is called with <code>--version</code> as the first command line parameter.
+The following considerations should be kept in mind:</p>
+<ul>
+<li>
+<p><em>Chained program calls</em> - One program or script can call another.  In each case, the environment of the parent program provides environment variables to the called program.
+This can impact the initial state of called programs.</p>
+</li>
+<li>
+<p><em>Command line parameter expansion</em> - The command shell provides standard variable expansion functionality using wildcard characters.
+For example, for Cygwin/Linux the <code>ls a*</code> command will list all files with <code>a</code> as the first character.
+This expansion by default occurs in the command shell before calling the program.
+In other words, the called program does not see a command parameter of <code>a*</code> but instead sees the expanded list of matching files.
+Another expansion that occurs is to replace environment veriable references with the value of the environment variable.
+For example, on Cygwin/Linux <code>ls $HOME</code> will list the contents of the user's home directory.
+To avoid expansion from happening, the wildcard character must be protected/escaped.  See the next two bullets.</p>
+</li>
+<li>
+<p>Filenames with spaces and backslashes.
+Filenames passed to a program that include spaces can be problematic because the command shell splits the name into multiple tokens.
+Baskslashes used in Windows can be problematic because the backslash is a special character that "escapes" the following character.
+For example <code>\*</code> can mean "I want the literal asterisk character, not wildcard behavior", but handling is different between operating systems.
+One solution is to avoid using folders and filenames with spaces and as much as possible handle input filenames gracefully whether a
+Python program is run on Windows or Cygwin/Linux.
+See the next bullet.</p>
+</li>
+<li>
+<p>Protecting from command parameter expansion and handling white space.
+On Cygwin/Linux, single quotes around a command line parameter can be used to prevent the parameter from any expansion,
+and double quotes around a parameter will allow for expansion but treat the parameter as a single value when passed to the called program
+(space will be included in the parameter).  On Windows, double quotes around the parameter allow expansion and will keep spaces.</p>
+</li>
+</ul>
+<h2 id="command-line-parameter-standards">Command Line Parameter Standards</h2>
+<p>When creating a Python program, it is best to use standard command line parameters.
+Command line parameter standards are available but are typically very technical (see: <a href="http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html">http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html</a>).
+A basic summary is as follows:</p>
+<ul>
+<li>
+<p>Use Linux-style format for command parameters, which prefix parameters with dashes rather than Windows /.
+Dashes are more universal and avoid confusion with path separators.</p>
+</li>
+<li>
+<p>If the command parameter is a single character, use a single dash, for example to print the vesion:  <code>-v</code>.</p>
+</li>
+<li>
+<p>If the command parameter is longer than a single character, use two dashes, for example to print the version:  <code>--version</code>.</p>
+</li>
+<li>
+<p>Specify the value associated with a command line parameter using an equals sign, for example <code>-inputFile=nameOfFile</code> or as the following parameter <code>-inputFile nameOfInputFile</code></p>
+</li>
+</ul>
+<h2 id="getting-the-value-of-command-line-parameters-basic">Getting the Value of Command Line Parameters (Basic)</h2>
+<p>Command line parameters are stored in an array <code>sys.argv</code> and can be printed using the following:</p>
+<pre><code class="python">import sys
+
+for arg in sys.argv:
+  print arg
+</code></pre>
+
+<p>The first argument (<code>arg[0]</code>) contains the name of the Python file that is being run.  All other array values contain the command line
+parameters that were specified on the command line.  The <code>sys.arg</code> array can be manually processed to retrieve parameter values
+and set in variables; however, utility functions are available to do this work.  See the next section.</p>
+<h2 id="getting-the-value-of-command-line-parameters-advanced">Getting the Value of Command Line Parameters (Advanced)</h2>
+<p>It is generally best to create a standard command line parsing function that uses built-in Python capabilities.
+The older getopt and newer argparse modules are distributed with Python and other modules are also available, for example:
+<a href="https://realpython.com/blog/python/comparing-python-command-line-parsing-libraries-argparse-docopt-click/">https://realpython.com/blog/python/comparing-python-command-line-parsing-libraries-argparse-docopt-click/</a>.</p>
+<p>The following are references for several options:</p>
+<ul>
+<li><a href="https://docs.python.org/2/library/getopt.html">getopt Reference</a></li>
+<li><a href="https://docs.python.org/2/library/argparse.html#module-argparse">argparse Reference</a></li>
+<li><a href="https://docs.python.org/2/howto/argparse.html#id1">argparse 2 Tutorial</a></li>
+<li><a href="https://docs.python.org/3/howto/argparse.html#id1">argparse 3 Tutorial</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../global-local-variables/" class="btn btn-neutral float-right" title="Global vs. Local Variables">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../best-practices/" class="btn btn-neutral" title="Python Best Practices"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright Open Water Foundation</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../best-practices/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../global-local-variables/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

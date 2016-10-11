@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Open Water Foundation">
+  
+  <title>Logging - OWF Learn Python</title>
+  
+
+  <link rel="shortcut icon" href="../OWF-Logo-Favicon-32x32.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Logging";
+    var mkdocs_page_input_path = "logging.md";
+    var mkdocs_page_url = "/logging/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../extra_javascript.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> OWF Learn Python</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../install-python/">Install and Configure Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../run-python-program/">Running the Python Program</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../programming-basics/">Python Programming Basics</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../best-practices/">Python Best Practices</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../command-line-parameters/">Command Line Parameters</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../global-local-variables/">Global vs. Local Variables</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Logging</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#logging">Logging</a></li>
+                
+                    <li><a class="toctree-l4" href="#logging-overview">Logging Overview</a></li>
+                
+                    <li><a class="toctree-l4" href="#python-2-logging">Python 2 Logging</a></li>
+                
+                    <li><a class="toctree-l4" href="#python-3-logging">Python 3 Logging</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../functions/">Functions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../error-handling/">Error Handling</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../documentation/">Documenting Python Code</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../water-resources/">Python Tools for Water Resources</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">OWF Learn Python</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Logging</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="logging">Logging</h1>
+<p>Logging is an important feature of software and a practice of software developers that facilitates debugging and troubleshooting.</p>
+<h2 id="logging-overview">Logging Overview</h2>
+<p>Logging is the practice of writing messages to one or more output streams to record program progress and issues.
+Output streams include standard output (stdout, the output window, or console),
+standard error (stderr, similar to standard output but used for errors), and output file.</p>
+<p>Logging is implemented by utilizing the Python logging module, which collects messages from running code,
+determines whether the messages should be logged (based on logging configuration), and then directs the log messages to the
+proper output stream(s).</p>
+<p>Logging is an alternative to the built-in <code>print()</code> function in Python, which prints to the console.
+However, printing to the console may be sufficient in some cases.
+One issue with printing to the console is that it can greatly slow down the program due to using graphical resources.
+If extensive logging is printed to the console, the output may need to be redirected to a file anyway because it exceeds the window scroll buffer
+(for example <code>python script.py &gt; output.log</code>).
+Consequently, if the output needs to be redirected to a file, then a log file may as well be used.</p>
+<p>The Basic Logging Tutorial mentioned below provides guidance for implenting logging.</p>
+<h2 id="python-2-logging">Python 2 Logging</h2>
+<p>Logging in Python 2 occurs using the logging facility.  See the following:</p>
+<ul>
+<li><a href="https://docs.python.org/2/library/logging.html">Logging API reference</a></li>
+<li><a href="https://docs.python.org/2/howto/logging.html#logging-basic-tutorial">Basic Tutorial</a></li>
+<li><a href="https://docs.python.org/2/howto/logging.html#logging-advanced-tutorial">Advanced Tutorial</a></li>
+<li><a href="https://docs.python.org/2/howto/logging-cookbook.html#logging-cookbook">Logging Cookbook</a></li>
+</ul>
+<h2 id="python-3-logging">Python 3 Logging</h2>
+<p>Logging in Python 3 occurs using the logging facility.  See the following:</p>
+<ul>
+<li><a href="https://docs.python.org/3/library/logging.html">Logging API reference</a></li>
+<li><a href="https://docs.python.org/3/howto/logging.html#logging-basic-tutorial">Basic Tutorial</a></li>
+<li><a href="https://docs.python.org/3/howto/logging.html#logging-advanced-tutorial">Advanced Tutorial</a></li>
+<li><a href="https://docs.python.org/3/howto/logging-cookbook.html#logging-cookbook">Logging Cookbook</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../functions/" class="btn btn-neutral float-right" title="Functions">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../global-local-variables/" class="btn btn-neutral" title="Global vs. Local Variables"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright Open Water Foundation</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/OpenWaterFoundation/owf-learn-python" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../global-local-variables/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../functions/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
