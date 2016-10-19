@@ -3,7 +3,8 @@
 
 # Ignore temporary files from editors
 
-.swp
+*.swp
+*.swo
 
 # Office temporary files
 
