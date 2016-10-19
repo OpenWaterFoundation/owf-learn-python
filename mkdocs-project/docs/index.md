@@ -1,4 +1,4 @@
-# Open Water Foundation Learn Python Documentation
+# Open Water Foundation / Learn Python
 
 ## Introduction
 
