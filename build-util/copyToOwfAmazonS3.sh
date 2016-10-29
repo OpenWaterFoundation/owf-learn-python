@@ -22,5 +22,4 @@ fi
 
 awsProfile="$1"
 
-echo "s3 sync ../mkdocs-project/site ${s3Folder} ${dryrun} --recursive --delete --profile owf-steve"
 aws s3 sync ../mkdocs-project/site ${s3Folder} ${dryrun} --delete --profile "$awsProfile"
