@@ -6,6 +6,10 @@
 *.swp
 *.swo
 
+# Ignore log files
+
+*.log
+
 # Office temporary files
 
 *.tmp

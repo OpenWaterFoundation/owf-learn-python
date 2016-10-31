@@ -5,14 +5,16 @@
 site_name: OWF Learn Python
 pages:
 - Home: index.md
-- About:  about.md 
 - Install and Configure Python:  install-python.md
 - Running the Python Program:  run-python-program.md
 - Python Programming Basics:  programming-basics.md
 - Python Best Practices: best-practices.md
 - Command Line Parameters:  command-line-parameters.md
 - Global vs. Local Variables:  global-local-variables.md
-- Logging:  logging.md
+- Logging:
+  - 'Overview': 'logging/overview.md'
+  - 'Python 2 Example':  'logging/logging2.md'
+  - 'Python 3 Example':  'logging/logging3.md'
 - Functions:  functions.md
 - Error Handling:  error-handling.md
 - Documenting Python Code:  documentation.md
