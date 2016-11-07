@@ -1,0 +1,5 @@
+# Ignore committing pytest dynamic test files
+
+.cache/
+
+__pycache__/

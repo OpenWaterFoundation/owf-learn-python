@@ -5,19 +5,25 @@
 site_name: OWF Learn Python
 pages:
 - Home: index.md
-- Install and Configure Python:  install-python.md
+- Development Environment:
+  - Overview: dev-env/overview.md
+  - Install and Configure Python: dev-env/python.md
+  - Install pytest:  dev-env/pytest.md
 - Running the Python Program:  run-python-program.md
-- Python Programming Basics:  programming-basics.md
-- Python Best Practices: best-practices.md
-- Command Line Parameters:  command-line-parameters.md
-- Global vs. Local Variables:  global-local-variables.md
+- Python Language:
+  - Python Programming Basics:  lang/programming-basics.md
+  - Python Best Practices:  lang/best-practices.md
+  - Command Line Parameters:  lang/command-line-parameters.md
+  - Global vs. Local Variables:  lang/global-local-variables.md
+  - Functions:  lang/functions.md
+  - Error Handling:  lang/error-handling.md
 - Logging:
   - 'Overview': 'logging/overview.md'
   - 'Python 2 Example':  'logging/logging2.md'
   - 'Python 3 Example':  'logging/logging3.md'
-- Functions:  functions.md
-- Error Handling:  error-handling.md
-- Documenting Python Code:  documentation.md
+- Development Tasks:
+  - 'Testing with pytest': 'dev-tasks/testing-pytest.md'
+  - Documenting Python Code:  dev-tasks/documentation.md
 - Python Tools for Water Resources:  water-resources.md
 theme: readthedocs
 repo_url:  https://github.com/OpenWaterFoundation/owf-learn-python
