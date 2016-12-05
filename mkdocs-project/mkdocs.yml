@@ -5,10 +5,12 @@
 site_name: OWF Learn Python
 pages:
 - Home: index.md
-- Development Environment:
+- Python Development Environment:
   - Overview: dev-env/overview.md
-  - Install and Configure Python: dev-env/python.md
-  - Install pytest:  dev-env/pytest.md
+  - Python: dev-env/python.md
+  - IDE (Eclipse PyDev):  dev-env/ide-eclipse-pydev.md
+  - IDE (PyCharm):  dev-env/ide-pycharm.md
+  - pytest:  dev-env/pytest.md
 - Running the Python Program:  run-python-program.md
 - Python Language:
   - Python Programming Basics:  lang/programming-basics.md

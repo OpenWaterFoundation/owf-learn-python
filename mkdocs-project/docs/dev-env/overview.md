@@ -8,4 +8,4 @@ The Python development environment typically consists of the following component
 * Testing framework (pytest is described here)
 * Documentation tool
 
-These components are described in sections of this documentation.
+Installation of these components are described in the next sections of this documentation.

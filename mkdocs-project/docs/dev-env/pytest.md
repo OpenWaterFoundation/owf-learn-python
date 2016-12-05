@@ -1,4 +1,4 @@
-# Python Developer Environment / pytest
+# Python Developer Environment / Install pytest
 
 Python has built-in unit test features:
 

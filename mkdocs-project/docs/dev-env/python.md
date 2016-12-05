@@ -1,85 +1,208 @@
-# Install Python
+# Python Development Environment / Install Python
 
 Python can be downloaded and installed from the Python website ([python.org/downloads](https://www.python.org/downloads/)).
-In general, you should choose the latest 2.x or 3.x version, and the choice may depend on integration with an existing environment.
-For example, an important application may have been developed in one version or the other.
-To determine what version of Python is already installed, open a command shell in the preferred computer operating system
-(Cygwin, Linux, or Windows), and check for an installed and default version:
+If possible, install and use the latest 3.x version.  However, the choice of Python version may depend on integration with an existing environment,
+and in some cases Python may be bundled with a software product.
+The last Python to be installed will generally be reflected in `PATH` environment variable,
+if the option to update the `PATH` was specified at install time, meaning that running `python`
+on the command line will run the last Python that was installed (not necessarily the newest version).
+
+To determine what version of Python is already installed and will run by default,
+open a command shell in the target computer operating system
+(Cygwin, Linux, or Windows), and check for the installed and default version:
 
 ```bash
 $ python --version
 Python 2.7.2
 ```
 
-Even if nothing is listed, Python may still be installed on the system, but most likely not, because generally at least one installed
-version will be the default and will be included in the `PATH` environment variable.  Refer to the following sections for
-differences between operating systems.
+Even if nothing is listed, Python may still be installed on the system and may not have been configured in the `PATH`.
+Refer to the following sections for instructions to install Python on different operating systems:
 
-Any changes to the Python installation environment, such as installing third-party packages, will install into the Python software file
-location based on the version of Python that was configured and run in the first place.  Be careful when working on a system that includes
-multiple Python versions because care needs to be taken to install components for the correct version.
+* [Bundled Python Installations](#bundled-python-installations) - when Python is packaged with a software product and is run independent of Python installed on the operating system
+* [Virtual Python Environment](#virtual-python-environment) - used to isolate Python package installs from operating system Python install
+* [Cygwin Python Installation](#cygwin-python-installation) - instructions to install Python on Cygwin
+* [Linux Python Installation](#linux-python-installation) - instructions to install Python on Linux
+* [Windows Python Installation](#windows-python-installation) - instructions to install Python on Windows
 
-## Bundled Installations
+## Bundled Python Installations
 
-Python may be distributed with software frameworks that depend on Python and need to control its installation so as to
-not break the framework.
+Python may be distributed with software products that depend on Python and need to control its installation so as to
+not break the products.
+This approach may be taken where significant Python libraries have been developed to integrate with the product.
 Bundled versions of Python are generally not configured as the default installation on a system and often require that a startup script
 is run to configure the Python environment.  Examples of bundled Python distributions include:
 
-* Esri ArcGIS Geographic Information System ().  On Windows and ArcGIS 10.4, Python is installed in the C:\\Python27 folder and includes C:\\Python27\ArcGIS10.4.
+* [Esri ArcGIS Geographic Information System](http://www.esri.com/software/arcgis/arcgis-for-desktop), which includes
+[ArcPy Python integration](http://pro.arcgis.com/en/pro-app/arcpy/main/arcgis-pro-arcpy-reference.htm).
+On Windows and ArcGIS 10.4, Python is installed in the C:\\Python27 folder and includes C:\\Python27\ArcGIS10.4.
 The ArcGIS software provides configuration tools to select the Python that is used.
-* QGIS ([https://www.qgis.org/en/site/forusers/download.html](https://www.qgis.org/en/site/forusers/download.html)) - open source Geographic Information System
+* [Quantum GIS (QGIS)](https://www.qgis.org/en/site/forusers/download.html)) - open source Geographic Information System, which
+includes [PyQGIS Python integration](http://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/)
 (for example Python may be installed in the C:\\OSGeo4W64\apps\Python27 folder and the Python environment is initialized by running C:\\OSGeo4W64\bin\python.exe)
 
+## Virtual Python Environment
 
-## Cygwin Installation
+Virtual environments are a newer approach that install Python packages
+into an isolated folder so that the installation of add-on Python packages does not
+impact Python installations on the computer.
+Site packages in this case will not be installed with the Python software.
+This option may also be appropriate in cases when administrative privileges are not available on the computer.
+This option is not explored here but may be appropriate.  See:
 
-Python for Cygwin ([https://cygwin.com/install.html](https://cygwin.com/install.html)) is installed by selecting the Python interpreter in the install package listing.
-The Python program is installed as /usr/bin/python or /usr/bin/python3 and supporting files are installed in /usr/lib/Python2.7/ and /usr/lib/Python3.4/.
+* [Creating Virtual Environments](https://packaging.python.org/installing/#creating-virtual-environments)
+
+
+## Cygwin Python Installation
+
+Python for [Cygwin](https://cygwin.com/install.html) is installed by selecting the Python interpreter in the install package listing.
+The Python program is installed as /usr/bin/python or /usr/bin/python3 and supporting files are installed in /usr/lib/Python2.7/ and /usr/lib/Python3.4/
+(the version numbers will increase as newer Python versions are released on Cygwin).
 The latest supported Python for each major version is installed when the Cygwin installer is run.
 
-## Linux Installation
+Use `python` to run Python 2 and `python3` to run Python 3.  Both are installed in `/usr/bin`.
 
-Python for Linux is installed by following the instructions on the Python download page.
-The Python program is installed as /usr/bin/python or /usr/bin/python3 and supporting files are installed in /usr/lib/Python2.7/ and /usr/lib/Python3.4/.
+## Linux Python Installation
 
-## Windows Installation
+Python for Linux is typically installed by following the instructions for the Linux distribution.
+For example, see instructions:
 
-Python for Linux is installed by following the instructions on the Python download page.
-Python will install in the top-level folder C:\\Python27 or C:\\Python34, for example.
-This allows the desired version of Python to be used based on component dependencies.
-In general you will want to install a recent version (in the 2 or 3 major version) and stick with that until there is a reason to change,
-or you have time to upgrade and ensure that third-part components are also updated.
+* [Python on Debian Linux](https://wiki.debian.org/Python)
 
-## Install pip (or Other Package Installer)
+The Python program is typically installed as /usr/bin/python or /usr/bin/python3 and supporting files are installed in /usr/lib/Python2.7/ and /usr/lib/Python3.4/,
+for example.  Consequently, the programs will typically be found in the `PATH`.
 
-The pip software is used to install Python packages and is the preferred installation tool since older tools such as easy_install
-do not support current conventions.  Therefore, in order to install third-party packages, install pip first.  To check for whether pip is already installed:
+## Windows Python Installation
 
-```bash
-$ pip --version
+Python for Windows is installed by following the instructions:
+
+* [Python Windows download page](https://www.python.org/downloads/) - general download page
+* [Python Releases for Windows](https://www.python.org/downloads/windows/) - downloads for Windows
+	+ Make sure to pick the desired Python version, for example pick latest Python 2.7 or 3.5
+	+ Make sure to pick the desired operating system version, for example ***Windows x86-64 executable installer*** for Widows 64-bit
+* [Using Python on Windows (Python 3)](https://docs.python.org/3/using/windows.html)
+* [Using Python on Windows (Python 2)](https://docs.python.org/2/using/windows.html)
+
+The Python documentation recommends installing Python in a shared location (not under User folder).
+Python 2 will install in the top-level folder C:\\Python27 and Python 3 will install in C:\\Program Files.
+When installing multiple versions of Python, the last installer to run when indicating that the `PATH` should be updated
+will result in that version being found in the `PATH`.  Other versions would have to be run by specifying the install location,
+or see the approach below.
+
+Modern Python installations, when installed to the shared system location (not user files), will install the `py` program
+in the Windows software location, `C:\Windows`, which is always in the `PATH`.
+Verify that `py` is available as follows:
+
+```
+> where py
+
 ```
 
-If not installed, install with:
+
+The `py` program will by default run the latest Python but can specify which Python to run:
+
+* `py` - run latest Python version
+* `py -2` - run the latest Python 2 version
+* `py -3` - run the latest Python 3 version
+* `py somefile.py` - run the specified Python module
+
+The `py` program essentially wraps all Python versions and also provides a way to always run Python without conflicts in the `PATH` environment variable.
+Note that it may not be necessary to use `py` if a [custom script]() is used to run a Python program,
+which can specify the exact version of Python to use.
+
+## Install pip to Install Add-on Packages
+
+It may be necessary to install add-on packages that extend the basic Python functionality.
+
+The [`pip` software](https://pip.pypa.io/en/stable/) is used to install Python packages and is the preferred installation tool since older tools such as `easy_install`
+do not support current conventions.  Therefore, in order to install third-party packages, install pip first.
+See the following resources:
+
+* [Installing Packages](https://packaging.python.org/installing/) - should use `pip` if possible
+* [Stack Overflow article on using `pip` when multiple Python versions are installed](http://stackoverflow.com/questions/10919569/how-to-install-a-module-use-pip-for-specific-version-of) -
+it is possible
+
+In summary:
+
+* Add-on packages should install into a location consistent with the Python software install location.
+* The `pip` utility should be used to install add-on packages.
+* It is possible to use `pip` to install modules when multiple versions of Python are installed.
+See the examples below for specific operating systems.
+
+### Cygwin
+
+The following uses a Cygwin `bash` shell.
+To check for whether pip is already installed,:
 
 ```bash
-$ python -m ensurepip
+py  --version
+```
+
+If not installed, install with the following, repeating for each Python installation:
+
+```bash
+py -m ensurepip
+```
+
+### Linux
+
+The following uses a Linux `bash` shell.
+To check for whether pip is already installed,:
+
+```bash
+py  --version
+```
+
+If not installed, install with the following, repeating for each Python installation:
+
+```bash
+py -m ensurepip
+```
+
+### Windows
+
+The following uses a Windows Command Shell.  To check for whether pip is already installed,:
+
+```com
+py -2 -m pip --version
+pip 7.0.1 from C:\Python27\lib\site-packages (python 2.7)
+
+py -3 -m pip --version
+pip 8.1.2 from C:\Users\sam\AppData\Local\Programs\Python\Python35-32\lib\site-packages (python 3.5)
+
+```
+
+If not installed, install with the following, repeating for each Python installation:
+
+```com
+py -2 -m ensurepip
+
+py -3 -m ensurepip
 ```
 
 ## Install Third-party Packages
 
-Third party packages typically have their own websites with installation instructions.  Follow those instructions within the cofigured
+Third party packages typically have their own websites with installation instructions.  Follow those instructions within the configured
 Python environment that is to receive the installation.  If necessary, check the Python version first to ensure compatibility with the
-module.
+module and run `py` accordingly, for example to install [MkDocs software](http://www.mkdocs.org/) on Windows using the `py` program
+(not used on Cygwin or Linux):
 
-## Create a Script to Configure the Python Environment
+```com
+py -2 -m pip install mkdocs
+
+py -3 -m pip install mkdocs
+```
+
+## Create a Script to Run Python or a Python Program
 
 In many cases, Python scripts can be run using the default Python that is recognized for an operating system (often the last one that was installed
 because the installation procedure will update the `PATH` environment variable).  However, it may be
-appropriate to specify a different version for a task.  In any case, it may make sense to create a script to run the Python program so that the user does not
-need to remember command-line syntax.  The example below runs a Python program on Cygwin/Linux.
-A similar .bat file could be created for Windows, in which case the `PATH` could be changed to specify the preferred Python at the start of the `PATH`.
-The following environment variables control the Python execution environment:
+appropriate to specify a different version for a task and in particular on Windows it may be necessary to use `py` to specify the Python version.
+
+It often makes sense to create a script to use the correct Python version, specify the correct script to run, and provide
+command line parameters.  This helps simplify command-line syntax for users.
+The following environment variables control the Python execution environment and can also be configured,
+for example to specify the location of custom modules:
 
 * `PYTHONPATH` - tells the Python interpreter where to locate the module files imported into a Python program.
 It should include the Python source library folder and the folders containing Python source code.  This variable may be set by the installer.
@@ -110,7 +233,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 From the above it can be seen that the supporting library files are installed in /usr/lib/python2.7.
 
-A simple configuration/run script may be similar to the following.
+A simple `bash` configuration/run script may be similar to the following.
 
 
 ```bash
@@ -159,3 +282,5 @@ where full developer environment cannot be installed.
 * [Sublime](https://www.sublimetext.com/) - text editor with features to supporty Python projects.
 
 * [Eclipse PyDev](http://www.pydev.org/) - Python plugin for Eclipse.
+
+Several of the above IDEs are discussed in more detail in later sections of this documentation.
