@@ -5,6 +5,15 @@ Errors that are not handled will result in ungraceful software exits.
 Errors that are gracefully handled also need to be logged or otherwise made known to the user so that corrective action can occur.
 Corrections may include fixing bad program input or fixing a software bug.
 
+This documentation contains the following sections:
+
+* [Design Considerations](#design-considerations)
+* [Function Return Status](#function-return-status)
+* [Exceptions](#exceptions)
+* [Logging Exceptions](#logging-exceptions)
+
+## Design Considerations
+
 Error handling can be implemented in various ways, with a few options described below.
 The basic approach is to detect a problem, handle the problem, and return logic flow gracefully to calling code.
 In some cases an error is fatal and the program should stop.

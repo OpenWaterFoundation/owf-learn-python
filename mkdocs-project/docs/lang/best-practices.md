@@ -1,4 +1,4 @@
-# Python Best Practices
+# Python Language / Python Best Practices
 
 The Python creator and developer community has over the years settled on best practices and styles for Python code.
 There are cases where there is still disagreement but the following resources are helpful:

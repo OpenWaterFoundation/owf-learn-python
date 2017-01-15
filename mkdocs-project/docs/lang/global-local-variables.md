@@ -3,6 +3,13 @@
 Programmers often make the mistake of using global variables for data management.
 Although this may make sense in a simple program, global data will generally lead to maintenance issues as a program becomes more complex.
 
+This documentation contains the following sections:
+
+* [The Concept of Scope](#the-concept-of-scope)
+* [Global Variables](#global-variables)
+* [Local Variables](#local-variables)
+* [Best Practices](#best-practices)
+
 ## The Concept of Scope
 
 Scope means the extent within a program that a variable is recognized.

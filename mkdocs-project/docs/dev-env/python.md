@@ -1,4 +1,4 @@
-# Python Development Environment / Install Python
+# Development Environment / Python Software
 
 Python can be downloaded and installed from the Python website ([python.org/downloads](https://www.python.org/downloads/)).
 If possible, install and use the latest 3.x version.  However, the choice of Python version may depend on integration with an existing environment,

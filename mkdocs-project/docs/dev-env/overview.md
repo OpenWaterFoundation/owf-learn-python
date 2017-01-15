@@ -1,11 +1,15 @@
-# Python Development Environment / Overview
+# Development Environment / Overview
 
-The Python development environment typically consists of the following components:
+The Python development environment typically consists of the following components,
+which are described in separate pages:
 
-* Python interpreter software
+* [Python software](python) - software that runs a Python language program
 * Integrated developer environment (IDE) or at a minimum text editor
-* Version control software (Git is focus in this documentation)
-* Testing framework (pytest is described here)
+	+ [Eclipse PyDev](ide-eclipse-pydev)
+	+ [PyCharm](ide-pycharm)
+* Version control software
+	+ Git is focus in this documentation
+* Testing framework
+	+ [pytest](pytest)
 * Documentation tool
-
-Installation of these components are described in the next sections of this documentation.
+	+ Sphinx

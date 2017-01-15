@@ -25,12 +25,19 @@ See also other [OWF learning resources](http://learn.openwaterfoundation.org).
 
 ## How to Use This Documentation
 
-The documentation is organized in the order of basic concepts and steps needed to build a Python program.
-As time allows, additional sections will be added for more advanced topics such as use of useful Python
-API libraries for water resources.
-
 This documentation is not intended to be a full reference for the Python language but focuses on important topics that
 will help a Python programmer understand important technical concepts and be successful with software tools.
+
+The documentation is organized in the order of basic concepts and steps needed to build a Python program.
+As time allows, additional sections will be added for more advanced topics such as use of useful Python
+API libraries for water resources.  The following main sections are available:
+
+* [Python Development Environment](dev-env/overview/) - how to install Python software
+* [Running a Python Program](run-python-program/) - how to run a Python program
+* [Python Language](lang/overview/) - important Python language topics
+* [Logging](logging/overview/) - Python logging
+* [Development Tasks](dev-tasks/overview/) - Python development tasks
+* [Python Tools for Water Resources](water-resources) - Python tools for water resources
 
 ## License
 

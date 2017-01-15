@@ -1,7 +1,14 @@
-# Documenting Python Code
+# Development Tasks / Documenting Python Code
 
 Code documentation is important to memorialize the knowledge about the code.
 Code that is not documented is more difficult to understand when maintaining and enhancing the code.
+
+This documentation contains the following sections:
+
+* [Inline Comments](#inline-comments)
+* [Multi-line Quoted Commments](#multi-line-quoted-commments)
+* [Module/Function/Class/Method Comments Using Docstrings](#modulefunctionclassmethod-comments-using-docstrings)
+* [Automating Code API Document Creation Using Sphinx](#automating-code-api-document-creation-using-sphinx)
 
 ## Inline Comments
 

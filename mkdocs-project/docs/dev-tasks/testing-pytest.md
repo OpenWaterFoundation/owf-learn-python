@@ -1,6 +1,18 @@
-# Development Tasks / Testing / pytest
+# Development Tasks / Testing with pytest
 
 Python programs can be tested using the `pytest` tool.
+
+This documentation contains the following sections:
+
+* [pytest Installation and Reference](#pytest-installation-and-reference)
+* [Running pytest](#running-pytest)
+* [Simple Example](#simple-example)
+* [ Tests for Function Returned Values](#tests-for-function-returned-values)
+* [ Test of Program Output With Expected Results in Script](#test-of-program-output-with-expected-results-in-script)
+* [ Test of Program Output with Expected Results in an Existing File](#test-of-program-output-with-expected-results-in-an-existing-file)
+
+## pytest Installation and Reference
+
 See the [pytest installation instructions](../dev-env/pytest/).
 
 See the [pytest documentation](http://doc.pytest.org/en/latest/).
