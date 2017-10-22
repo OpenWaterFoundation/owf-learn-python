@@ -1,4 +1,4 @@
-# Development Environment / Python Software
+# Development Environment / Python Software #
 
 Python can be downloaded and installed from the Python website ([python.org/downloads](https://www.python.org/downloads/)).
 If possible, install and use the latest 3.x version.  However, the choice of Python version may depend on integration with an existing environment,
@@ -25,7 +25,7 @@ Refer to the following sections for instructions to install Python on different 
 * [Linux Python Installation](#linux-python-installation) - instructions to install Python on Linux
 * [Windows Python Installation](#windows-python-installation) - instructions to install Python on Windows
 
-## Bundled Python Installations
+## Bundled Python Installations ##
 
 Python may be distributed with software products that depend on Python and need to control its installation so as to
 not break the products.
@@ -41,7 +41,7 @@ The ArcGIS software provides configuration tools to select the Python that is us
 includes [PyQGIS Python integration](http://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/)
 (for example Python may be installed in the C:\\OSGeo4W64\apps\Python27 folder and the Python environment is initialized by running C:\\OSGeo4W64\bin\python.exe)
 
-## Virtual Python Environment
+## Virtual Python Environment ##
 
 Virtual environments are a newer approach that install Python packages
 into an isolated folder so that the installation of add-on Python packages does not
@@ -53,7 +53,7 @@ This option is not explored here but may be appropriate.  See:
 * [Creating Virtual Environments](https://packaging.python.org/installing/#creating-virtual-environments)
 
 
-## Cygwin Python Installation
+## Cygwin Python Installation ##
 
 Python for [Cygwin](https://cygwin.com/install.html) is installed by selecting the Python interpreter in the install package listing.
 The Python program is installed as /usr/bin/python or /usr/bin/python3 and supporting files are installed in /usr/lib/Python2.7/ and /usr/lib/Python3.4/
@@ -62,7 +62,7 @@ The latest supported Python for each major version is installed when the Cygwin 
 
 Use `python` to run Python 2 and `python3` to run Python 3.  Both are installed in `/usr/bin`.
 
-## Linux Python Installation
+## Linux Python Installation ##
 
 Python for Linux is typically installed by following the instructions for the Linux distribution.
 For example, see instructions:
@@ -72,7 +72,7 @@ For example, see instructions:
 The Python program is typically installed as /usr/bin/python or /usr/bin/python3 and supporting files are installed in /usr/lib/Python2.7/ and /usr/lib/Python3.4/,
 for example.  Consequently, the programs will typically be found in the `PATH`.
 
-## Windows Python Installation
+## Windows Python Installation ##
 
 Python for Windows is installed by following the instructions:
 
@@ -110,7 +110,7 @@ The `py` program essentially wraps all Python versions and also provides a way t
 Note that it may not be necessary to use `py` if a [custom script]() is used to run a Python program,
 which can specify the exact version of Python to use.
 
-## Install pip to Install Add-on Packages
+## Install pip to Install Add-on Packages ##
 
 It may be necessary to install add-on packages that extend the basic Python functionality.
 
@@ -129,7 +129,7 @@ In summary:
 * It is possible to use `pip` to install modules when multiple versions of Python are installed.
 See the examples below for specific operating systems.
 
-### Cygwin
+### Cygwin ###
 
 The following uses a Cygwin `bash` shell.
 To check for whether pip is already installed,:
@@ -144,7 +144,7 @@ If not installed, install with the following, repeating for each Python installa
 py -m ensurepip
 ```
 
-### Linux
+### Linux ###
 
 The following uses a Linux `bash` shell.
 To check for whether pip is already installed,:
@@ -159,7 +159,7 @@ If not installed, install with the following, repeating for each Python installa
 py -m ensurepip
 ```
 
-### Windows
+### Windows ###
 
 The following uses a Windows Command Shell.  To check for whether pip is already installed,:
 
@@ -180,7 +180,7 @@ py -2 -m ensurepip
 py -3 -m ensurepip
 ```
 
-## Install Third-party Packages
+## Install Third-party Packages ##
 
 Third party packages typically have their own websites with installation instructions.  Follow those instructions within the configured
 Python environment that is to receive the installation.  If necessary, check the Python version first to ensure compatibility with the
@@ -193,7 +193,7 @@ py -2 -m pip install mkdocs
 py -3 -m pip install mkdocs
 ```
 
-## Create a Script to Run Python or a Python Program
+## Create a Script to Run Python or a Python Program ##
 
 In many cases, Python scripts can be run using the default Python that is recognized for an operating system (often the last one that was installed
 because the installation procedure will update the `PATH` environment variable).  However, it may be
@@ -263,7 +263,7 @@ or, to use built-in system functionality to run the python3 interpreter automati
 
 print("Hello world")
 ```
-## Install Interactive Development Environment
+## Install Interactive Development Environment ##
 
 An Interactive Development Environment (IDE) is helpful for development because it provides an integrated edit/run/test/build/deploy environment.
 There are many Python developer environments.  The following are several that may be appropriate.  It is important to recognize the impacts that an IDE
@@ -275,11 +275,11 @@ where full developer environment cannot be installed.
 
 * IDLE - distributed with Python.  Start by running `idle` on the command line.
 
-* [PyCharm](https://www.jetbrains.com/pycharm/download) - Integrated Python development environment with commerical and community editions.
+* [PyCharm](https://www.jetbrains.com/pycharm/download) - Integrated Python development environment with commercial and community editions.
 
 * [WingIDE](https://wingware.com/) - commercial product.
 
-* [Sublime](https://www.sublimetext.com/) - text editor with features to supporty Python projects.
+* [Sublime](https://www.sublimetext.com/) - text editor with features to support Python projects.
 
 * [Eclipse PyDev](http://www.pydev.org/) - Python plugin for Eclipse.
 

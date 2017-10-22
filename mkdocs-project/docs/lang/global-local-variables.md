@@ -1,4 +1,4 @@
-# Global Versus Local Variables
+# Global Versus Local Variables #
 
 Programmers often make the mistake of using global variables for data management.
 Although this may make sense in a simple program, global data will generally lead to maintenance issues as a program becomes more complex.
@@ -10,14 +10,16 @@ This documentation contains the following sections:
 * [Local Variables](#local-variables)
 * [Best Practices](#best-practices)
 
-## The Concept of Scope
+--------
+
+## The Concept of Scope ##
 
 Scope means the extent within a program that a variable is recognized.
 A global variable is recognized throughout the entire program.
 A variable that has scope within a function is only recognized in the function.
 The extent of the scope depends on where and how a variable is declared.
 
-## Global Variables
+## Global Variables ##
 
 A global variable in Python is declared at the top level of a module and not within any function.
 The global variable will only be global within the module and not across modules.
@@ -47,7 +49,7 @@ Current time : 2016-10-10 14:48:43.394564
 It is often necessary to use global variables in programs to hold global state information such as the starting folder on the computer.
 However, called functions should not rely on the global variable and should instead use variables declared within the function or passed to the function.
 
-## Local Variables
+## Local Variables ##
 
 Local variables are recognized in the scope that they were declared.  For example, the following illustrates how a local format string is used to format the current date.
 
@@ -86,7 +88,7 @@ def someFunction():
   print("a="+str(a))
 ```
 
-## Best Practices
+## Best Practices ##
 
 The following are some best practices related to global data:
 

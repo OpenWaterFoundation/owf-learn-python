@@ -1,4 +1,4 @@
-# Functions
+# Functions #
 
 It is good practice to break code into functions that perform specific tasks.
 This ensures that code logic is easier to understand and maintain.
@@ -10,7 +10,7 @@ This documentation contains the following sections:
 * [Order of Functions](#order-of-functions)
 * [Returning Values From Functions](#returning-values-from-functions)
 
-## Function Names
+## Function Names ##
 
 Coding conventions vary between languages, programmers, and projects.
 The Style Guide for Python Code provides guidance for function names:
@@ -19,15 +19,15 @@ The Style Guide for Python Code provides guidance for function names:
 In summary, use lowecase names with words separated by underscores.  Or, use "camelCase" but only if already in use.
 For a new project, pick a style that is appropriate given other conventions and remain consistent.
 
-## Function Documentation
+## Function Documentation ##
 
 Refer to the [Documentation](../dev-tasks/documentation/) section.
 
-## Order of Functions
+## Order of Functions ##
 
 To facilitate code review, functions should generally be alphabetized unless there is a reason to group/order differently.
 
-## Returning Values From Functions
+## Returning Values From Functions ##
 
 Python, like other languages, has conventions for how variables are passed to functions, and whether those variables can be changed.
 Articles on the topic can be confusing, especially to beginning programmers,
