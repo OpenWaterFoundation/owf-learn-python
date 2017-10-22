@@ -1,4 +1,4 @@
-# Developer Environment / Install pytest
+# Developer Environment / Install pytest #
 
 Python has built-in unit test features:
 
@@ -12,7 +12,7 @@ See the [pytest documentation](http://doc.pytest.org/en/latest/).
 
 See also a [comparison of Python testing frameworks](http://pythontesting.net/podcast/pytest-vs-unittest-vs-nose-pt002/).
 
-## Install pytest
+## Install pytest ##
 
 To install `pytest` for the installed Python 2 environment and assuming `pip` is installed, run the following on Windows, Cygwin, or Linux:
 

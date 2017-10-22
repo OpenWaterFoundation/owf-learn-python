@@ -1,10 +1,10 @@
-# Running a Python Program
+# Running a Python Program #
 
-## Specify Python Interpreter
+## Specify Python Interpreter ##
 
 Python programs with source code in files with .py extension
-can be compiled, but for general purpose use and transparency are distributed as text in the original files
-A Python program is run by specifying the main Python program filename as the first commmand line parameter to the interpreter:
+can be compiled, but for general purpose use and transparency are distributed as text in the original files.
+A Python program is run by specifying the main Python program filename as the first command line parameter to the interpreter:
 
 ```bash
 python hello-world.py
@@ -16,7 +16,7 @@ where the hello-world.py file contains:
 print("Hello world")
 ```
 
-## Main Entry Point in Python Program
+## Main Entry Point in Python Program ##
 
 The interpreter will execute the Python program from top to bottom.  If the code does not contain any functions and simply 
 contains Python commands, then those commands are executed in sequence.
@@ -50,6 +50,6 @@ if ( __name__ == "__main__" ):
 	main()
 ```
 
-## Graceful Exit
+## Graceful Exit ##
 
 Need to discuss here graceful exit so that calling program can check the exit status for success or failure.

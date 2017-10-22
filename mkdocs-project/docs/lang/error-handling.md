@@ -1,4 +1,4 @@
-# Error Handling
+# Error Handling #
 
 Error handling is one of the most important concepts in software development.
 Errors that are not handled will result in ungraceful software exits.
@@ -12,12 +12,12 @@ This documentation contains the following sections:
 * [Exceptions](#exceptions)
 * [Logging Exceptions](#logging-exceptions)
 
-## Design Considerations
+## Design Considerations ##
 
 Error handling can be implemented in various ways, with a few options described below.
 The basic approach is to detect a problem, handle the problem, and return logic flow gracefully to calling code.
 In some cases an error is fatal and the program should stop.
-In other cases, the progam can continue, perhaps with notification to the user.
+In other cases, the program can continue, perhaps with notification to the user.
 The degree of notification depends on whether the error is expected as normal behavior or is out of the range of normal conditions.
 For example, it should be expected that code that processes files may encounter cases where files are missing.
 
@@ -29,9 +29,9 @@ A function that performs math operations should detect and handle division by ze
 Leap years should be handled gracefully without generating errors in the first place, rather than having incomplete code that generates exceptions.
 The programmer is not off the hook if they implement exception handling as described below - the error handling should provide useful feedback.
 
-## Function Return Status
+## Function Return Status ##
 
-Basic error handling for functions includes using a return status to let calling code know whether the function was succesful.
+Basic error handling for functions includes using a return status to let calling code know whether the function was successful.
 This may be appropriate for basic functionality but is limited. Using exceptions as in the next section is generally more useful.
 
 For example, a function might return an integer to indicate its status, with 0 meaning success and other values corresponding to error states.
@@ -43,7 +43,7 @@ This approach for error handling is often too limiting in many cases.  See the d
 However, many programming languages do utilize an exit status from the main program because inter-language error handling must rely on simple concepts
 like a numerical exit status or a printed status string.
 
-## Exceptions
+## Exceptions ##
 
 Exceptions are unexpected conditions that occur in the logic of a program.
 Exception objects are "thrown" by the Python interpreter when an issue is detected, and have a specific type.
@@ -77,9 +77,9 @@ For Python 3, see:
 * [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
 * [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
 
-## Logging Exceptions
+## Logging Exceptions ##
 
-If logging is implemented for the program, then exceptions should be loggged as warning or error messages.
+If logging is implemented for the program, then exceptions should be logged as warning or error messages.
 This is particularly useful to allow the log file to be provided software developers so they can debug an issue.
 See the following for information about logging exceptions:  [https://www.loggly.com/blog/exceptional-logging-of-exceptions-in-python/](https://www.loggly.com/blog/exceptional-logging-of-exceptions-in-python/)
 

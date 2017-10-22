@@ -1,8 +1,8 @@
-# Python Language / Command Line Parameters
+# Python Language / Command Line Parameters #
 
 The Python interpreter can be run by specifying command line parameters (also called arguments).
 In basic use, the first parameter is the name of the Python program file to run and subsequent parameters are data to pass to the program.
-Parameters may also be specified prior to the program file name to control Python.  To see a full list of Python interpreter command paramameters,
+Parameters may also be specified prior to the program file name to control Python.  To see a full list of Python interpreter command parameters,
 run `python -h` or `python --help`.  For example `python -v` will run in verbose mode and `python --version` will print the version.
 Running `python -v helloworld.py` will run the specified program in versbose mode.
 
@@ -16,7 +16,7 @@ This documentation contains the following sections:
 * [Getting the Value of Python Command Line Parameters (Basic)](#getting-the-value-of-python-command-line-parameters-basic)
 * [Getting the Value of Python Command Line Parameters (Advanced)](#getting-the-value-of-python-command-line-parameters-advanced)
 
-## Operating System Command Shell
+## Operating System Command Shell ##
 
 Every operating system offers a command line shell (or "console" or "terminal").  The operating system kernal runs continuously and manages processes,
 some of which are transitory and some of which are "services" that start when the computer starts and run continuously.
@@ -40,7 +40,7 @@ The command shell displays a prompt and then waits for user input, which is ente
 Typically running the `exit` command causes the shell to exit (window will go away).
 The text that is typed before `Enter` is parsed by the command shell, using spaces and tabs as whitespace between tokens.
 If the first token is recognized as an internal command of the shell, it is executed without trying to run any other program.
-In this case additional tokens may also be used to modify the behavior of the internal commmand.
+In this case additional tokens may also be used to modify the behavior of the internal command.
 
 If the first token is not recognized as an internal command of the shell, then the folders in the `PATH` environment variable are searched to find the program to run.
 On Cygwin/Linux use `which programName` to determine whether a program is in the `PATH`.  On Windows, use `where programName`.
@@ -73,7 +73,7 @@ On Cygwin/Linux, single quotes around a command line parameter can be used to pr
 and double quotes around a parameter will allow for expansion but treat the parameter as a single value when passed to the called program
 (space will be included in the parameter).  On Windows, double quotes around the parameter allow expansion and will keep spaces.
 
-## Python Command Line Parameter Standards
+## Python Command Line Parameter Standards ##
 
 When creating a Python program, it is best to use standard command line parameters.
 Command line parameter standards are available but are typically very technical (see: [http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html)).
@@ -82,13 +82,13 @@ A basic summary is as follows:
 * Use Linux-style format for command parameters, which prefix parameters with dashes rather than Windows /.
 Dashes are more universal and avoid confusion with path separators.
 
-* If the command parameter is a single character, use a single dash, for example to print the vesion:  `-v`.
+* If the command parameter is a single character, use a single dash, for example to print the version:  `-v`.
 
 * If the command parameter is longer than a single character, use two dashes, for example to print the version:  `--version`.
 
 * Specify the value associated with a command line parameter using an equals sign, for example `-inputFile=nameOfFile` or as the following parameter `-inputFile nameOfInputFile`
 
-## Getting the Value of Python Command Line Parameters (Basic)
+## Getting the Value of Python Command Line Parameters (Basic) ##
 
 Command line parameters are stored in an array `sys.argv` and can be printed using the following:
 
@@ -103,7 +103,7 @@ The first argument (`arg[0]`) contains the name of the Python file that is being
 parameters that were specified on the command line.  The `sys.arg` array can be manually processed to retrieve parameter values
 and set in variables; however, utility functions are available to do this work.  See the next section.
 
-## Getting the Value of Python Command Line Parameters (Advanced)
+## Getting the Value of Python Command Line Parameters (Advanced) ##
 
 It is generally best to create a standard command line parsing function that uses built-in Python capabilities.
 The older getopt and newer argparse modules are distributed with Python and other modules are also available, for example:

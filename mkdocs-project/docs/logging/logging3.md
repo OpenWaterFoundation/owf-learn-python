@@ -1,4 +1,4 @@
-# Logging / Python 3
+# Logging / Python 3 #
 
 
 Logging in Python 3 occurs using the logging facility.  See the following:
