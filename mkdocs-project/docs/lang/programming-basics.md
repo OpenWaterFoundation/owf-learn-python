@@ -16,4 +16,4 @@ The following resources provide an overview of the language:
 * [Python 2 Documentation](https://docs.python.org/2/)
 * [Python 3 Documentation](https://docs.python.org/3/)
 * [W3 Resource Python Tutorial](http://www.w3resource.com/python/python-tutorial.php)
-
+* [Guru99 Learn Python in 7 Days](https://www.guru99.com/python-tutorials.html)
