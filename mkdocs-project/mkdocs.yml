@@ -9,7 +9,7 @@ pages:
   - Overview: dev-env/overview.md
   - Python Software: dev-env/python.md
   - IDE (Eclipse PyDev):  dev-env/ide-eclipse-pydev.md
-  - IDE (PyCharm):  dev-env/ide-pycharm.md
+  - IDE (PyCharm):  dev-env/ide-pycharm/ide-pycharm.md
   - pytest:  dev-env/pytest.md
 - Running a Python Program:  run-python-program.md
 - Python Language:
