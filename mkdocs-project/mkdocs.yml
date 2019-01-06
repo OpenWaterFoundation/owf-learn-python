@@ -7,27 +7,28 @@ pages:
 - Home: index.md
 - Development Environment:
   - Overview: dev-env/overview.md
-  - Python Software: dev-env/python.md
-  - IDE (Eclipse PyDev):  dev-env/ide-eclipse-pydev.md
+  - Python: dev-env/python/python.md
+  - IDE (Eclipse PyDev):  dev-env/ide-eclipse/ide-eclipse.md
   - IDE (PyCharm):  dev-env/ide-pycharm/ide-pycharm.md
-  - pytest:  dev-env/pytest.md
-- Running a Python Program:  run-python-program.md
+  - pytest:  dev-env/pytest/pytest.md
+- Running a Python Program:  running/run-python-program.md
 - Python Language:
   - Overview:  lang/overview.md
   - Python Programming Basics:  lang/programming-basics.md
   - Python Best Practices:  lang/best-practices.md
   - Command Line Parameters:  lang/command-line-parameters.md
-  - Global vs. Local Variables:  lang/global-local-variables.md
+  - Global and Local Variables:  lang/global-local-variables.md
   - Functions:  lang/functions.md
   - Error Handling:  lang/error-handling.md
-- Logging:
-  - 'Overview': 'logging/overview.md'
-  - 'Python 2 Example':  'logging/logging2.md'
-  - 'Python 3 Example':  'logging/logging3.md'
+  - Logging:
+    - 'Overview': 'lang/logging/overview.md'
+    - 'Python 2 Example':  'lang/logging/logging2.md'
+    - 'Python 3 Example':  'lang/logging/logging3.md'
 - Development Tasks:
   - Overview:  dev-tasks/overview.md
   - 'Testing with pytest': 'dev-tasks/testing-pytest.md'
   - Documenting Python Code:  dev-tasks/documenting.md
+  - Creating a Virtual Environment:  dev-tasks/creating-venv.md
 - Python Tools for Water Resources:  water-resources.md
 # ------- configuration properties ---------------
 # Use Material theme
@@ -42,7 +43,6 @@ site_description:  'Open Water Foundation Learn Python'
 site_author:  'Open Water Foundation'
 site_favicon:  'images/OWF-Logo-Favicon-32x32.png'
 copyright:  'Copyright Open Water Foundation'
-# Extra options
-extra:
-  # Use extra CSS to customize styles, based on theme
-  extra_css: 'css/extra-material-theme.css'
+# Use extra CSS to customize styles, based on theme
+extra_css:
+- 'css/extra-material-theme.css'

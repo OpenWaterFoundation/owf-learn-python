@@ -1,4 +1,4 @@
-# Functions #
+# Python Language / Functions #
 
 It is good practice to break code into functions that perform specific tasks.
 This ensures that code logic is easier to understand and maintain.

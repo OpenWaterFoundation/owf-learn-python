@@ -1,4 +1,4 @@
-# Error Handling #
+# Python Language / Error Handling #
 
 Error handling is one of the most important concepts in software development.
 Errors that are not handled will result in ungraceful software exits.

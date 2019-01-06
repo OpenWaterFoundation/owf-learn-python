@@ -6,16 +6,16 @@
 *.swp
 *.swo
 
-# Ignore the dynamic MkDocs site folder
+# Ignore Python compiled files
+*.pyc
 
+# Ignore the dynamic MkDocs site folder
 mkdocs-project/site/
 
 # Ignore log files
-
 *.log
 
 # Office temporary files
-
 *.tmp
 
 # Word

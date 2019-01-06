@@ -1,4 +1,4 @@
-# Global Versus Local Variables #
+# Python Language / Global and Local Variables #
 
 Programmers often make the mistake of using global variables for data management.
 Although this may make sense in a simple program, global data will generally lead to maintenance issues as a program becomes more complex.

@@ -1,4 +1,4 @@
-# Developer Environment / Install pytest #
+# Developer Environment / pytest #
 
 Python has built-in unit test features:
 
@@ -35,4 +35,4 @@ The following may be useful:  [improve slow startup](http://stackoverflow.com/qu
 
 ## Writing pytest Tests
 
-See the [testing task documentation](../dev-tasks/testing-pytest/) for examples of tests.
+See the [testing task documentation](../../dev-tasks/testing-pytest/) for examples of tests.
