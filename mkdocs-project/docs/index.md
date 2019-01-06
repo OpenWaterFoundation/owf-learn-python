@@ -33,9 +33,8 @@ As time allows, additional sections will be added for more advanced topics such 
 API libraries for water resources.  The following main sections are available:
 
 * [Python Development Environment](dev-env/overview/) - how to install Python software
-* [Running a Python Program](run-python-program/) - how to run a Python program
+* [Running a Python Program](running/run-python-program/) - how to run a Python program
 * [Python Language](lang/overview/) - important Python language topics
-* [Logging](logging/overview/) - Python logging
 * [Development Tasks](dev-tasks/overview/) - Python development tasks
 * [Python Tools for Water Resources](water-resources) - Python tools for water resources
 
