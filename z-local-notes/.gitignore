@@ -1,0 +1,13 @@
+# Ignore everything in this folder except for this README.md
+# This folder contains useful notes for the developer, such as which environment
+# is being used for development.
+# This is helpful, in particular, because mixing Cygwin and Git Bash git tools
+# does not work well due to different implementations of file permissions
+# and text file end of line.
+#
+# Recommendation, create a file with name to indicate Git environment:
+#
+# git-env-is-cygwin
+# git-env-is-git-bash
+/*
+!.gitignore

@@ -1,4 +1,4 @@
-# Development Tasks / Creating a Virtual Environment
+# Development Task / Creating a Virtual Environment
 
 Virtual environments are a newer approach that install Python packages
 into a virtual environment folder so that the installation of add-on Python packages does not

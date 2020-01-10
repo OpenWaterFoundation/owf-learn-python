@@ -1,4 +1,4 @@
-# Development Tasks / Testing with pytest
+# Development Task / Testing with pytest
 
 Python programs can be tested using the `pytest` tool.
 

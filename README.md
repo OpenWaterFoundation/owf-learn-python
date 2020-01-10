@@ -26,7 +26,7 @@ mkdocs-project/       (Typical MkDocs project for this documentation)
 ## Development Environment ##
 
 The development environment for contributing to this project requires installation of Python, MkDocs, and Material MkDocs theme.
-Python 2 has been used for development.  See the [OWF / Learn MkDocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs/)
+Python 3 has been used for development.  See the [OWF / Learn MkDocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs/)
 documentation for more information about MkDocs.
 
 ## Editing and Viewing Content ##
@@ -53,14 +53,11 @@ Contribute to the documentation as follows:
 
 This repository is maintained by the [Open Water Foundation](http://openwaterfoundation.org/).
 
-## Contributors ##
-
-Steve Malers, Open Water Foundation (@smalers)
-
 ## Release Notes ##
 
 The following release notes indicate the update history for documentation, with GitHub repository issue indicated,
 if applicable (links to issues via README.md are not cleanly supported by GitHub so use the repository issues page to find).
 
+* 2020-01-09 [4] - reorganize into training sessions, lessons and reference topics
 * 2017-10-21 [1] - switch to Material theme, update documentation based on experience.
 * 2017-01-15 - initial version.
