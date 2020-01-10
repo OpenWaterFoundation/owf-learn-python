@@ -10,6 +10,12 @@ This documentation contains the following sections:
 * [Order of Functions](#order-of-functions)
 * [Returning Values From Functions](#returning-values-from-functions)
 
+See:
+
+* [W3Schools Python tutorial](https://www.w3schools.com/python/python_functions.asp)
+
+-----------------
+
 ## Function Names ##
 
 Coding conventions vary between languages, programmers, and projects.

@@ -14,3 +14,5 @@ Topics are listed generally in order of basic to advanced.
 | Intermediate | [Files (Text)](files-text/files-text.md) | Reading and writing data from text files. |
 | Intermediate | [Error Handling](error-handling/error-handling.md) | Handle errors. |
 | Intermediate | [Logging](logging/logging.md) | Logging messages for status, debugging, warnings, and errors. |
+| Intermediate | [Enumerations](enumerations/enumerations.md) | Enumerations for defined values. |
+| Advanced | [Classes](classes/classes.md) | Classes for object-oriented code. |

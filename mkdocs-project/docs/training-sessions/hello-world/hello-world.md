@@ -3,7 +3,7 @@
 The resources in the following table describe how to create a simple "Hello World" program.
 
 **<p style="text-align: center;">
-Training Session Steps
+Training Session Summary
 </p>**
 
 | **Lesson/Task** | **Description** |
@@ -33,7 +33,7 @@ Run the program by opening a command line tool and then running the following us
 for the system:
 
 ```
-python hello-world.py
+$> python hello-world.py
 Hello World
 ```
 

@@ -10,7 +10,7 @@ nav:
   - 'Hello World': training-sessions/hello-world/hello-world.md
   - 'Language Basics': training-sessions/language-basics/language-basics.md
   - 'Static Data': training-sessions/static-data/static-data.md
-  - 'Object-oriented Design': training-sessions/oo-design/oo-design.md
+  - 'Object-oriented Code': training-sessions/oo-code/oo-code.md
 - 'Lessons':
   - 'Overview': lessons/overview.md
   - 'Modules and Packages (Basic)':  lessons/modules-basic/modules-basic.md
@@ -28,10 +28,11 @@ nav:
   - 'Variable and Function Scope':  lang/scope/scope.md
   - 'Files (Text)':  lang/files-text/files-text.md
   - 'Error Handling':  lang/error-handling/error-handling.md
-  - 'Enumerations':  lang/enumerations/enumerations.md
   - 'Logging': lang/logging/logging.md
   - 'Python 2 Example': lang/logging/logging2.md
   - 'Python 3 Example': lang/logging/logging3.md
+  - 'Enumerations':  lang/enumerations/enumerations.md
+  - 'Classes':  lang/classes/classes.md
 - 'Development Tasks':
   - 'Overview':  dev-tasks/overview.md
   - 'Running Python':  dev-tasks/running-python/running-python.md
