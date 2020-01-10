@@ -1,0 +1,1 @@
+# Training Session / Static Data #

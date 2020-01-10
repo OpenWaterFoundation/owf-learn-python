@@ -122,7 +122,6 @@ Verify that `py` is available as follows:
 
 ```
 
-
 The `py` program will by default run the latest Python but can specify which Python to run:
 
 * `py` - run latest Python version
@@ -132,17 +131,33 @@ The `py` program will by default run the latest Python but can specify which Pyt
 
 The `py` program essentially wraps all Python versions and also provides
 a way to always run Python without conflicts in the `PATH` environment variable.
-Note that it may not be necessary to use `py` if a
-[custom script](../../running/run-python-program.md) is used to run a Python program,
+This allows the default behavior to find a recent version of Python.
+However, it may be necessary to exert more control of how Python is run, for example:
+
+* Use a [custom script](../../running/run-python-program.md) to run a Python program,
 which can specify the exact version of Python to use.
+* Manually update the `PATH` environment variable to find a specific version of Python.
+For example, the Python installer may not result in necessary `PATH` environment variable.
+This can become more of an issue if additional Python-related programs are run, such
+as `pip` (see below), `mkdocs` for documentation, `virtualenv`, etc.
+It may make sense to update the `PATH` to include the most recent Python version.
+For example, use the Windows 10 ***Control Panel*** and then
+***Environment Variables / Path / Edit...*** to set the `PATH` to find Python37 installed in user files, as follows.
+	+ `%USERPROFILE%\AppData\Local\Programs\Python\Python37` - find `python.exe` itself
+	(note that only `python.exe` may be availble, and not `python3.exe`)
+	+ `%USERPROFILE%\AppData\Local\Programs\Python\Python37\Scripts` - find Python-related scripts such as
+	`pip.exe` (note that `pip3.exe` and `pip.exe` may both be available and equivalent),
+	`mkdocs.exe`, and `virtualenv.exe`
 
 ## Install pip to Install Add-on Packages ##
 
 It is often necessary to install add-on packages that extend the basic Python functionality.
 
-The [`pip` software](https://pip.pypa.io/en/stable/) is used to install Python packages and is the preferred installation tool since older tools such as `easy_install`
-do not support current conventions.  Therefore, in order to install third-party packages, install `pip` first.
-The `pip` software is often installed by default but may not be and will require installation.
+The [`pip` software](https://pip.pypa.io/en/stable/) is used to install Python packages
+and is the preferred installation tool since older tools such as `easy_install` do not support current conventions.
+Therefore, in order to install third-party packages, install `pip` first.
+The `pip` software is often installed by default for new Python versions,
+but may require installation or updating.
 In addition to installing a specific package, `pip` will install necessary dependencies.
 See the following resources:
 
@@ -162,6 +177,8 @@ Also use `pip3` if necessary to avoid confusion with Python2 `pip`.
 The `pip` and `pip3` programs may be equivalent on a system where only Python3 is installed.
 However, `pip` and `pip3` may be different programs depending on which Python versions are installed.
 * If `pip` prints messages about how to update itself, follow those instructions.
+* See the notes on installing Python (in particular Windows) to for information about setting
+the `PATH` to find `pip`.
 * See the examples below for specific operating systems.
 
 ### ![Cygwin](../../images/cygwin-32.png) Install pip on Cygwin ###

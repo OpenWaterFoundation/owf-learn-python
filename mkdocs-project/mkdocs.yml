@@ -2,47 +2,87 @@
 # Use hash-comments to comment out pages have not been written
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
-site_name: OWF Learn Python
-pages:
-- Home: index.md
-- Development Environment:
-  - Overview: dev-env/overview.md
-  - Python: dev-env/python/python.md
-  - IDE (Eclipse PyDev):  dev-env/ide-eclipse/ide-eclipse.md
-  - IDE (PyCharm):  dev-env/ide-pycharm/ide-pycharm.md
-  - pytest:  dev-env/pytest/pytest.md
-- Running a Python Program:  running/run-python-program.md
-- Python Language:
-  - Overview:  lang/overview.md
-  - Python Programming Basics:  lang/programming-basics.md
-  - Python Best Practices:  lang/best-practices.md
-  - Command Line Parameters:  lang/command-line-parameters.md
-  - Global and Local Variables:  lang/global-local-variables.md
-  - Functions:  lang/functions.md
-  - Error Handling:  lang/error-handling.md
-  - Logging:
-    - 'Overview': 'lang/logging/overview.md'
-    - 'Python 2 Example':  'lang/logging/logging2.md'
-    - 'Python 3 Example':  'lang/logging/logging3.md'
-- Development Tasks:
-  - Overview:  dev-tasks/overview.md
-  - 'Testing with pytest': 'dev-tasks/testing-pytest.md'
-  - Documenting Python Code:  dev-tasks/documenting.md
-  - Creating a Virtual Environment:  dev-tasks/creating-venv.md
-- Python Tools for Water Resources:  water-resources.md
+site_name: 'OWF Learn Python'
+nav:
+- 'Introduction': index.md
+- 'Training Sessions':
+  - 'Overview': training-sessions/overview.md
+  - 'Hello World': training-sessions/hello-world/hello-world.md
+  - 'Language Basics': training-sessions/language-basics/language-basics.md
+  - 'Static Data': training-sessions/static-data/static-data.md
+  - 'Object-oriented Design': training-sessions/oo-design/oo-design.md
+- 'Lessons':
+  - 'Overview': lessons/overview.md
+  - 'Modules and Packages (Basic)':  lessons/modules-basic/modules-basic.md
+  - 'Command Line Parameters':  lessons/command-line-parameters/command-line-parameters.md
+  - 'Classes':  lessons/classes/classes.md
+  - 'Modules and Packages (Advanced)':  lessons/modules-advanced/modules-advanced.md
+- 'Python Language':
+  - 'Overview': lang/overview.md
+  - 'Main Program':  lang/main-program/main-program.md
+#  - 'Python Programming Basics':  lang/programming-basics.md
+#  - 'Python Best Practices':  lang/best-practices.md
+  - 'Variables':  lang/variables/variables.md
+  - 'Functions':  lang/functions/functions.md
+  - 'Arrays and Lists':  lang/arrays-and-lists/arrays-and-lists.md
+  - 'Variable and Function Scope':  lang/scope/scope.md
+  - 'Files (Text)':  lang/files-text/files-text.md
+  - 'Error Handling':  lang/error-handling/error-handling.md
+  - 'Enumerations':  lang/enumerations/enumerations.md
+  - 'Logging': lang/logging/logging.md
+  - 'Python 2 Example': lang/logging/logging2.md
+  - 'Python 3 Example': lang/logging/logging3.md
+- 'Development Tasks':
+  - 'Overview':  dev-tasks/overview.md
+  - 'Running Python':  dev-tasks/running-python/running-python.md
+  - 'Editing Code':  dev-tasks/editing-code/editing-code.md
+  - 'Running Python Program':  dev-tasks/running-program/running-program.md
+  - 'Documenting Python Code':  dev-tasks/doc-code/doc-code.md
+  - 'Testing with pytest': dev-tasks/testing-pytest/testing-pytest.md
+  - 'Creating a Virtual Environment':  dev-tasks/creating-venv/creating-venv.md
+# - 'Python Tools for Water Resources':  water-resources.md
+- 'Development Environment':
+  - 'Overview': dev-env/overview.md
+  - 'Workspace': dev-env/workspace/workspace.md
+  - 'Command Line': dev-env/command-line/command-line.md
+  - 'Python': dev-env/python/python.md
+  - 'IDE (Eclipse PyDev)':  dev-env/ide-eclipse/ide-eclipse.md
+  - 'IDE (PyCharm)':  dev-env/ide-pycharm/ide-pycharm.md
+  - 'IDE (IDLE)':  dev-env/ide-idle/ide-idle.md
+  - 'pytest':  dev-env/pytest/pytest.md
 # ------- configuration properties ---------------
-# Use Material theme
-# - installation notes:  https://github.com/squidfunk/mkdocs-material
-theme: material
-#
-#theme: readthedocs
-#Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
-# - Also see edit_uri if repo_url is specified
-#repo_url:  https://github.com/OpenWaterFoundation/owf-learn-python
-site_description:  'Open Water Foundation Learn Python'
-site_author:  'Open Water Foundation'
-site_favicon:  'images/OWF-Logo-Favicon-32x32.png'
-copyright:  'Copyright Open Water Foundation'
+# Alphabetize
+# ------------------------------------------------
+copyright:  Copyright 2017-2020, Open Water Foundation
+# ------------------------------------------------
 # Use extra CSS to customize styles, based on theme
 extra_css:
 - 'css/extra-material-theme.css'
+# ------------------------------------------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme: material
+# ------------------------------------------------
+# Google Analytics
+# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
+google_analytics:
+ - 'UA-135465513-1'
+ - auto
+# ------------------------------------------------
+#Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
+# - Also see edit_uri if repo_url is specified
+#repo_url:  https://github.com/OpenWaterFoundation/owf-learn-python
+# ------------------------------------------------
+site_author:  'Open Water Foundation'
+site_description:  'Open Water Foundation Learn Python'
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme:
+  name: 'material'
+  favicon: 'images/OWF-Logo-Favicon-32x32.png'
+# ------------------------------------------------
+# The following controls how URLs are created
+# - As of MkDocs 1.0 the default is true meaning URLs to a page ABC is ABC/ rather than something/ABC.html.
+# - see:  https://www.mkdocs.org/user-guide/configuration/#use_directory_urls
+# use_directory_urls: true
+# ------------------------------------------------
