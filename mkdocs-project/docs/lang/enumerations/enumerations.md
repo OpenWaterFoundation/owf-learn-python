@@ -1,40 +1,83 @@
 # Python Language / Enumerations #
 
-Enumerations are constant static variables that constraint software definitions.
+The `Enum` (enumeration) in the `enum` module is a construct that is designed to define
+specific values that control logic.
+Enumerations can use any data type and `int` and `str` type are common.
+Note that enumerations were added in Python 3.4.
 
-This documentation contains the following sections:
+See reference documentation:
 
-* [Function Names](#function-names)
-* [Function Documentation](#function-documentation)
-* [Order of Functions](#order-of-functions)
-* [Returning Values From Functions](#returning-values-from-functions)
+* [Python `enum` module documentation](https://docs.python.org/3/library/enum.html)
 
-## Function Names ##
+The following example illustrates how to define an enumeration,
+in this case a file named `DayOfWeekType.py`.
+"CapWord" naming convention is recommended for the filename and enumeration, consistent with how classes are often named.
+The convention of using "Type" at the end of the enumeration identifies the class as an enumeration.
 
-Coding conventions vary between languages, programmers, and projects.
-The Style Guide for Python Code provides guidance for function names:
-[Python Style Guide for Function Names](https://www.python.org/dev/peps/pep-0008/#function-names).
+```python
+# Day of week enumeration
 
-In summary, use lowercase names with words separated by underscores.  Or, use "camelCase" but only if already in use.
-For a new project, pick a style that is appropriate given other conventions and remain consistent.
+from enum import Enum
 
-## Function Documentation ##
 
-Refer to the [Documentation](../dev-tasks/documentation/) section.
+class DayOfWeekType(Enum):
+    """
+    Enumeration for day of week.
+    """
+    MONDAY = "Monday"
+    TUESDAY = "Tuesday"
+    WEDNESDAY = "Wednesday"
+    THURSDAY = "Thursday"
+    FRIDAY = "Friday"
+    SATURDAY = "Saturday"
+    SUNDAY = "Sunday"
 
-## Order of Functions ##
+    def __str__(self):
+        """
+        Format the enumeration as a string - just return the value.
+        This is needed because the default is to return the name as in MONDAY (uppercase).
+        """
+        return self.value
+```
 
-To facilitate code review, functions should generally be alphabetized unless there is a reason to group/order differently.
+Create a main program to use the enumeration, named `DayOfWeekType_main.py`:
 
-## Returning Values From Functions ##
+```python
+# Simple program to illustrate using module data as static data
 
-Python, like other languages, has conventions for how variables are passed to functions, and whether those variables can be changed.
-Articles on the topic can be confusing, especially to beginning programmers,
-for example:  [http://www.python-course.eu/passing_arguments.php](http://www.python-course.eu/passing_arguments.php).
-To simplify, keep the following in mind:
+from DayOfWeekType import DayOfWeekType
 
-* Mutable objects are those that can be modified.  For example, a list that is passed to the function can have items added in the function.
+# Main program entry point
+if __name__ == '__main__':
+    # Want to control some logic by day
+    today = DayOfWeekType.MONDAY
 
-* Immutable objects (primitives like strings, numbers) cannot be modified and new copies are made inside the function.
-Therefore, a function that needs to return such objects will need to enclose the object in a mutable object like a list in the function parameters, or
-return the new immutable object(s) as the return value, a new list, tuple, etc.
+    print("\nDoing tasks for " + str(today) + "\n")
+    # Note that "is" is used for comparison rather than "==" although "==" will work
+    if today is DayOfWeekType.MONDAY:
+        # Do some tasks for Monday
+        pass
+
+    # Actually, module data are not really static because variables can be modified
+    DayOfWeekType.MONDAY = "Friday"
+    print("Monday after changing = " + str(DayOfWeekType.MONDAY))
+```
+
+Running the program prints the following:
+
+```sh
+$> python3 DayOfWeekType_main.py
+
+Doing tasks for Monday
+
+Traceback (most recent call last):
+  File "DayOfWeekType_main.py", line 17, in <module>
+    DayOfWeekType.MONDAY = "Friday"
+  File "/usr/lib/python3.6/enum.py", line 361, in __setattr__
+    raise AttributeError('Cannot reassign members.')
+AttributeError: Cannot reassign members.
+```
+
+In this case, the enumeration behaves as desired and the `AttributeError` illustrates that
+the enumeration value **cannot** be reassigned.
+Therefore the enumeration is static and safe.

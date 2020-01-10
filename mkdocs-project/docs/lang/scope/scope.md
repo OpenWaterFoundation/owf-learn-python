@@ -19,6 +19,10 @@ A global variable is recognized throughout the entire program.
 A variable that has scope within a function is only recognized in the function.
 The extent of the scope depends on where and how a variable is declared.
 
+See:
+
+* [W3Schools tutorial for scope](https://www.w3schools.com/python/python_scope.asp)
+
 ## Global Variables ##
 
 A global variable in Python is declared at the top level of a module and not within any function.
