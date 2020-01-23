@@ -1,4 +1,4 @@
-# Lesson / Classes
+# Python / Lesson / Classes
 
 * [Lesson Introduction](#lesson-introduction)
 

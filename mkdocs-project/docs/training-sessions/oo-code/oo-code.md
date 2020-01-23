@@ -1,4 +1,4 @@
-# Training Session / Object-oriented Code #
+# Python / Training Session / Object-oriented Code #
 
 This training session explains how to create object-oriented code.
 
@@ -15,7 +15,7 @@ Training Session Summary
 | [Dev Task - Editing Code](../../dev-tasks/editing-code/editing-code.md) | Editing Python code. |
 | [Dev Task - Running Python Program](../../dev-tasks/running-program/running-program.md) | Run a Python program. |
 | **Lesson Sequence** | |
-| See below: [Introduction](#introduction) | Introduction to static data. |
+| See below: [Introduction](#introduction) | Introduction to object-oriented code. |
 | Language: [Classes](../../lang/classes/classes.md) | Classes. |
 | Language: [Enumerations](../../lang/enumerations/enumerations.md) | Enumerations. |
 
