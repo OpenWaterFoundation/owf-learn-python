@@ -7,16 +7,23 @@ nav:
 - 'Introduction': index.md
 - 'Training Sessions':
   - 'Overview': training-sessions/overview.md
+  - 'Python Setup': training-sessions/python-setup/python-setup.md
   - 'Hello World': training-sessions/hello-world/hello-world.md
   - 'Language Basics': training-sessions/language-basics/language-basics.md
+  - 'Writing Good Code': training-sessions/writing-good-code/writing-good-code.md
   - 'Static Data': training-sessions/static-data/static-data.md
   - 'Object-oriented Code': training-sessions/oo-code/oo-code.md
 - 'Lessons':
   - 'Overview': lessons/overview.md
   - 'Modules and Packages (Basic)':  lessons/modules-basic/modules-basic.md
+  - 'Python Style Guide':  lessons/python-style-guide/python-style-guide.md
+  - 'Type Hints':  lessons/type-hints/type-hints.md
+  - 'Code Documentation':  lessons/code-doc/code-doc.md
+  - 'Exception Handling':  lessons/exception-handling/exception-handling.md
   - 'Command Line Parameters':  lessons/command-line-parameters/command-line-parameters.md
   - 'Classes':  lessons/classes/classes.md
   - 'Modules and Packages (Advanced)':  lessons/modules-advanced/modules-advanced.md
+  - 'User Interfaces using Qt':  lessons/qt/qt.md
 - 'Python Language':
   - 'Overview': lang/overview.md
   - 'Main Program':  lang/main-program/main-program.md

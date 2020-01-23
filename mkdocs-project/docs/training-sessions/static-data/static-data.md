@@ -1,4 +1,4 @@
-# Training Session / Static Data #
+# Python / Training Session / Static Data #
 
 This training session explains how to use static data to provide approved data values
 and constrain software behavior.
@@ -10,8 +10,7 @@ Training Session Summary
 | **Lesson/Task** | **Description** |
 | -- | -- |
 | **Prerequisites** | As needed... | 
-| [Dev Env - Install Python](../../dev-env/python/python.md) | Ensure that Python has been installed. |
-| [Dev Env - Workspace](../../dev-env/workspace/workspace.md) | Determine a workspace for development files. |
+| [Session - Python Setup](../python-setup/python-setup.md) | Setup Python environment. |
 | [Dev Env - Command Line](../../dev-env/command-line/command-line.md) | Use a command line to run programs. |
 | [Dev Task - Editing Code](../../dev-tasks/editing-code/editing-code.md) | Editing Python code. |
 | [Dev Task - Running Python Program](../../dev-tasks/running-program/running-program.md) | Run a Python program. |
