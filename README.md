@@ -1,10 +1,10 @@
 # owf-learn-python #
 
-This repository contains the [Open Water Foundation (OWF)](http://openwaterfoundation.org/) Python training materials,
+This repository contains the [Open Water Foundation (OWF)](https://openwaterfoundation.org/) Python training materials,
 which provides guidance for using the Python programming language.
 The documentation is written for the layperson in order to encourage use of Python.
 
-See the deployed [OWF / Learn Python](http://learn.openwaterfoundation.org/owf-learn-python/) documentation.
+See the deployed [OWF / Learn Python](https://learn.openwaterfoundation.org/owf-learn-python/) documentation.
 
 ## Repository Contents ##
 
@@ -26,7 +26,7 @@ mkdocs-project/       (Typical MkDocs project for this documentation)
 ## Development Environment ##
 
 The development environment for contributing to this project requires installation of Python, MkDocs, and Material MkDocs theme.
-Python 3 has been used for development.  See the [OWF / Learn MkDocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs/)
+Python 3 has been used for development.  See the [OWF / Learn MkDocs](https://learn.openwaterfoundation.org/owf-learn-mkdocs/)
 documentation for more information about MkDocs.
 
 ## Editing and Viewing Content ##
@@ -51,7 +51,7 @@ Contribute to the documentation as follows:
 
 ## Maintainers ##
 
-This repository is maintained by the [Open Water Foundation](http://openwaterfoundation.org/).
+This repository is maintained by the [Open Water Foundation](https://openwaterfoundation.org/).
 
 ## Release Notes ##
 

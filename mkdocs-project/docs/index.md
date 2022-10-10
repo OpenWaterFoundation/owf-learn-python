@@ -25,7 +25,7 @@ but rather to split lessons into clearly separate topics.
 This documentation focuses on practical issues that, if understood,
 will minimize frustration and increase the efficiency of the software development process.
 
-See also other [OWF learning resources](http://learn.openwaterfoundation.org),
+See also other [OWF learning resources](https://learn.openwaterfoundation.org),
 including resources for other programming languages.
 
 **This documentation is a work in progress and may contain notes for inserts for awhile until time can
@@ -33,13 +33,13 @@ be devoted to filling in blanks.**
 
 ## About the Open Water Foundation ##
 
-The [Open Water Foundation](http://openwaterfoundation.org) is a nonprofit social enterprise that focuses
+The [Open Water Foundation](https://openwaterfoundation.org) is a nonprofit social enterprise that focuses
 on developing and supporting open source software and open data for water resources
 to make better decisions about water.
 OWF has created this documentation to educate its staff, students,
 and other developers that are working on Python software.
 
-See also other [OWF learning resources](http://learn.openwaterfoundation.org).
+See also other [OWF learning resources](https://learn.openwaterfoundation.org).
 
 ## How to Use This Documentation ##
 
