@@ -71,11 +71,12 @@ extra_css:
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme: material
 # ------------------------------------------------
-# Google Analytics
+# Google Analytics:
 # - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
-google_analytics:
- - 'UA-135465513-1'
- - auto
+extra:
+  analytics:
+    provider: google
+    property: 'G-KJFMBY739T'
 # ------------------------------------------------
 #Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
 # - Also see edit_uri if repo_url is specified
@@ -88,9 +89,3 @@ site_description:  'Open Water Foundation Learn Python'
 theme:
   name: 'material'
   favicon: 'images/OWF-Logo-Favicon-32x32.png'
-# ------------------------------------------------
-# The following controls how URLs are created
-# - As of MkDocs 1.0 the default is true meaning URLs to a page ABC is ABC/ rather than something/ABC.html.
-# - see:  https://www.mkdocs.org/user-guide/configuration/#use_directory_urls
-# use_directory_urls: true
-# ------------------------------------------------
